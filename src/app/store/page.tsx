@@ -4,7 +4,7 @@ import React from 'react'
 const About = () => {
   return (
     <Section>
-      <div>Store</div>
+      <div className='font-bold text-4xl'>Store</div>
     </Section>
   )
 }
