@@ -1,10 +1,16 @@
 import Section from '@/components/layout/Section'
 import React from 'react'
+import storeItems from "../../data/items.json"
 
 const About = () => {
   return (
     <Section>
-      <div className='font-bold text-4xl'>Store</div>
+      <h1 className='font-bold text-4xl'>Store</h1>
+      {storeItems.map(item => (
+        <div>
+          {JSON.stringify(item)}
+        </div>
+      ))}
     </Section>
   )
 }
