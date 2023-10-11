@@ -1,12 +1,9 @@
-import Section from "@/components/Section";
-import Link from "next/link";
+import Section from "@/components/layout/Section";
 
 export default function Home() {
   return (
-    <Section className="flex gap-4">
-      <Link href="/">home</Link>
-      <Link href="/store">store</Link>
-      <Link href="/about">about</Link>
+    <Section>
+      home
     </Section>
   )
 }

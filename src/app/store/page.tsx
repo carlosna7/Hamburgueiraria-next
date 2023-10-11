@@ -1,10 +1,10 @@
-import Section from '@/components/Section'
+import Section from '@/components/layout/Section'
 import React from 'react'
 
 const About = () => {
   return (
     <Section>
-      <div>About</div>
+      <div>Store</div>
     </Section>
   )
 }
