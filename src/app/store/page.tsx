@@ -1,18 +1,19 @@
 import Section from '@/components/layout/Section'
 import React from 'react'
 import storeItems from "../../data/items.json"
+import StoreItem from '@/components/layout/StoreItem'
 
-const About = () => {
+const Store = () => {
   return (
     <Section>
       <h1 className='font-bold text-4xl'>Store</h1>
       {storeItems.map(item => (
-        <div>
-          {JSON.stringify(item)}
+        <div key={item.id}>
+          <StoreItem {...item}/>
         </div>
       ))}
     </Section>
   )
 }
 
-export default About
+export default Store

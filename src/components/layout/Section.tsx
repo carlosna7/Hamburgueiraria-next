@@ -1,11 +1,11 @@
 import React, { ReactNode } from 'react';
 
-interface SectionProps {
+type SectionProps = {
 	className?: string;
 	children: ReactNode;
 }
 
-const Section: React.FC<SectionProps> = ({ className, children }) => {
+const Section = ({ className, children }: SectionProps) => {
   return (
     <section className={`p-16 ${className}`}> {children} </section>
   )
