@@ -1,3 +1,4 @@
+import { useShoppingCart } from '@/context/ShoppingCartContext'
 import formatCurrency from '@/utilities/formatCurrency'
 import React from 'react'
 
@@ -10,7 +11,8 @@ type StoreItemProps = {
 
 const StoreItem = ({id, name, price, imgUrl }: StoreItemProps) => {
 
-	const quantity: number = 2
+	const { getItemQuantity, increaseCardQuantity, decreaseCardQuantity, removeFromCart } = useShoppingCart()
+	const quantity: number = getItemQuantity(id)
 
   return (
     <div className='flex flex-col w-96'>

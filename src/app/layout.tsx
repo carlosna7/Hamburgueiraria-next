@@ -2,6 +2,7 @@ import Navbar from '@/components/layout/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { ShoppingCartProvider } from '@/context/ShoppingCartContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,11 +17,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br">
+    <ShoppingCartProvider>
+      <html lang="pt-br">
       <body className={inter.className}>
         <Navbar/>
         {children}
       </body>
     </html>
+    </ShoppingCartProvider>
+    
   )
 }
