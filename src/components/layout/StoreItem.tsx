@@ -1,3 +1,4 @@
+'use client'
 import { useShoppingCart } from '@/context/ShoppingCartContext'
 import formatCurrency from '@/utilities/formatCurrency'
 import React from 'react'
@@ -24,14 +25,20 @@ const StoreItem = ({id, name, price, imgUrl }: StoreItemProps) => {
 				<p>{formatCurrency(price)}</p>
 			</div>
 
-			<div>
+			<div className='flex flex-col gap-4 items-center'>
 				{quantity === 0 ? (
-					<button className='bg-blue-500 p-2 rounded-md'>Add to card</button>
+					<button className='bg-blue-500 p-2 rounded-md' onClick={() => increaseCardQuantity(id)}>Add to card</button>
 				) : 
-				<div className='flex gap-4 items-center'>
-					 <button className='text-3xl bg-blue-500 px-2 rounded-md'>-</button>
-					 <span>{quantity} in cart</span>
-					 <button className='text-3xl bg-blue-500 px-2 rounded-md'>+</button>
+				<div className='flex flex-col gap-2 items-center'>
+					 <div className='flex items-center'>
+						<button className='text-3xl bg-blue-500 px-2 rounded-md' onClick={() => decreaseCardQuantity(id)}>-</button>
+						<span>{quantity} in cart</span>
+						<button className='text-3xl bg-blue-500 px-2 rounded-md' onClick={() => increaseCardQuantity(id)}>+</button>
+					 </div>
+					 <div>
+					 	<button className='bg-red-500 p-2 rounded-md' onClick={() => removeFromCart(id)}>Remove</button>
+					 </div>
+
 				</div>}
 			</div>
         

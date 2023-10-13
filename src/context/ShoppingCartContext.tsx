@@ -1,5 +1,6 @@
 'use client'
 
+import ShoppingCart from '@/components/layout/ShoppingCart'
 import React, { ReactNode, createContext, useContext, useState } from 'react'
 
 type ShoppingCartProviderProps = {
@@ -7,13 +8,17 @@ type ShoppingCartProviderProps = {
 }
 
 type ShoppingCartContext = {
+  openCart: () => void
+  closeCart: () => void
   getItemQuantity: (id: number) => number
   increaseCardQuantity: (id: number) => void
   decreaseCardQuantity: (id: number) => void
   removeFromCart: (id: number) => void
+  cartQuantity: number
+  cartItems: CartItem[]
 }
 
-type CardItem = {
+type CartItem = {
   id: number
   quantity: number
 }
@@ -26,11 +31,18 @@ export function useShoppingCart () {
 
 export function ShoppingCartProvider ({ children }: ShoppingCartProviderProps) {
 
-  const [ cartItems, setCartItems ] = useState<CardItem[]>([])
+  const [ isOpen, setIsOpen ]  = useState(false)
+  const [ cartItems, setCartItems ] = useState<CartItem[]>([])
+
+  const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0)
+
+  const openCart = () => setIsOpen(true)
+  const closeCart = () => setIsOpen(false)
 
   const getItemQuantity = (id: number) => {
     return cartItems.find(item => item.id === id)?.quantity || 0
   } 
+
   const increaseCardQuantity = (id: number) => {
     setCartItems(currItems => {
       if(currItems.find(item => item.id === id) == null) {
@@ -63,15 +75,16 @@ export function ShoppingCartProvider ({ children }: ShoppingCartProviderProps) {
     })
   }
 
-  const removeFromCart = (id: number) => [
+  const removeFromCart = (id: number) => {
     setCartItems(currItems => {
       return currItems.filter(item => item.id !== id)
     })
-  ]
+  }
 
   return (
-    <ShoppingCartContext.Provider value={{ getItemQuantity, increaseCardQuantity, decreaseCardQuantity, removeFromCart }} >
+    <ShoppingCartContext.Provider value={{ getItemQuantity, increaseCardQuantity, decreaseCardQuantity, removeFromCart, cartItems, cartQuantity, openCart, closeCart }} >
       {children}
+      {/* <ShoppingCart/> */}
     </ShoppingCartContext.Provider>
   )
 }

@@ -1,7 +1,12 @@
+'use client'
+import { useShoppingCart } from '@/context/ShoppingCartContext'
 import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
+
+	const { openCart, cartQuantity } = useShoppingCart()
+
   return (
     <div className='flex justify-between px-16 p-4 gap-4 bg-gray-400 '>
 
@@ -18,8 +23,10 @@ const Navbar = () => {
 			</ul>
  
 			<div className='relative'>
-				<p className='font-bold border-2 border-black rounded-full p-3'>$ $</p>
-				<div className='absolute bottom-0 right-0 bg-yellow-300 rounded-full px-2'>3</div>
+				<button className='font-bold border-2 border-black rounded-full p-3' onClick={openCart}>$ $</button>
+				{cartQuantity > 0 && (
+					<div className='absolute bottom-0 right-0 bg-red-400 rounded-full px-2'>{cartQuantity}</div>
+				)}
 			</div>
 
     </div>
