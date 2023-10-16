@@ -3,6 +3,7 @@
 import { useShoppingCart } from '@/context/ShoppingCartContext'
 import React from 'react'
 import storeItems from '../../data/items.json'
+import formatCurrency from '@/utilities/formatCurrency'
 
 type CartItemProps = {
   id: number
@@ -24,17 +25,13 @@ const CartItem = ({ id, quantity }: CartItemProps) => {
       <div className='flex'>
         <img  className='h-24 w-2/5 object-cover' src={item.imgUrl} alt="img" />
         <div>
-          <p>nome</p>
-          <p>preço individuaç</p>
+          <p>{item.name} {quantity > 0 && <span>{quantity}x</span>}</p>
+          <p>{formatCurrency(item.price)}</p>
         </div>
         <div>
-          <p>preço total por id</p>
-          <p>botão remover produtos id</p>
+          <p>{formatCurrency(quantity * item.price)}</p>
+          <button onClick={() => removeFromCart(item.id)} >x</button>
         </div>
-      </div>
-
-      <div className='flex justify-end font-bold text-2xl'>
-        <p>total geral</p>
       </div>
 
     </div>
