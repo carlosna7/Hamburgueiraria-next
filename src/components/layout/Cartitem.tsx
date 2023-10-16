@@ -19,7 +19,25 @@ const CartItem = ({ id, quantity }: CartItemProps) => {
   
 
   return (
-    <div>CartItem</div>
+    <div className='flex flex-col'>
+      
+      <div className='flex'>
+        <img  className='h-24 w-2/5 object-cover' src={item.imgUrl} alt="img" />
+        <div>
+          <p>nome</p>
+          <p>preço individuaç</p>
+        </div>
+        <div>
+          <p>preço total por id</p>
+          <p>botão remover produtos id</p>
+        </div>
+      </div>
+
+      <div className='flex justify-end font-bold text-2xl'>
+        <p>total geral</p>
+      </div>
+
+    </div>
   )
 }
 
