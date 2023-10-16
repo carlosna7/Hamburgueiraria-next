@@ -1,12 +1,18 @@
 import { useShoppingCart } from '@/context/ShoppingCartContext'
 import React from 'react'
 
-const ShoppingCart = () => {
+type ShoppingCartprops = {
+  isOpen: boolean
+}
 
-	const { cartCLose } = useShoppingCart()
+const ShoppingCart = ({ isOpen }: ShoppingCartprops ) => {
+
+	const { closeCart } = useShoppingCart()
     
   return (
-    <div className='w-96 h-96 bg-red-200'></div>
+    <div className='fixed top-0 right-0 h-full w-1/4 bg-slate-500'>
+      <div>cart</div>
+    </div>
   )
 }
 
