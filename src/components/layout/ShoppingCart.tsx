@@ -1,17 +1,25 @@
+'use client'
+
 import { useShoppingCart } from '@/context/ShoppingCartContext'
 import React from 'react'
+import CartItem from './CartItem'
 
-type ShoppingCartprops = {
+type ShoppingCartProps = {
   isOpen: boolean
 }
 
-const ShoppingCart = ({ isOpen }: ShoppingCartprops ) => {
+const ShoppingCart = ({ isOpen }: ShoppingCartProps ) => {
 
-	const { closeCart } = useShoppingCart()
+	const { cartItems } = useShoppingCart()
     
   return (
     <div className='fixed top-0 right-0 h-full w-1/4 bg-slate-500'>
-      <div>cart</div>
+      <p>cart</p>
+      <div>
+        {cartItems.map(item => (
+          <CartItem key={item.id} {...item }/> 
+        )) }
+      </div>
     </div>
   )
 }
