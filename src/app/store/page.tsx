@@ -3,6 +3,11 @@ import React from 'react'
 import storeItems from "../../data/items.json"
 import StoreItem from '@/components/layout/StoreItem'
 
+// https://www.burgerking.com.br/cardapio 
+// copiar grid e mudar alguns nomes
+
+//mudar para cardápio
+
 const Store = () => {
   return (
     <Section>
