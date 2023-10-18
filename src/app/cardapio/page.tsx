@@ -11,7 +11,7 @@ import StoreItem from '@/components/layout/StoreItem'
 const Store = () => {
   return (
     <Section>
-      <h1 className='font-bold text-4xl'>Store</h1>
+      <h1 className='font-bold text-4xl'>Cardápio</h1>
       {storeItems.map(item => (
         <div key={item.id}>
           <StoreItem {...item}/>
