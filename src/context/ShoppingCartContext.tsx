@@ -37,8 +37,14 @@ export function ShoppingCartProvider ({ children }: ShoppingCartProviderProps) {
 
   const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0)
 
-  const openCart = () => setIsOpen(true)
-  const closeCart = () => setIsOpen(false)
+  const openCart = () => {
+    setIsOpen(true)
+    console.log("set true")
+  }
+  const closeCart = () => {
+    setIsOpen(false)
+    console.log("set false")
+  }
 
   const getItemQuantity = (id: number) => {
     return cartItems.find(item => item.id === id)?.quantity || 0

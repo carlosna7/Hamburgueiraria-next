@@ -11,15 +11,19 @@ type ShoppingCartProps = {
   isOpen: boolean
 }
 
+
 const ShoppingCart = ({ isOpen }: ShoppingCartProps ) => {
 
-  const customClass = isOpen ? "hidden" : "block"
+  console.log(isOpen)
 
-	const { cartItems } = useShoppingCart()
+  const customClass = isOpen ? "block" : "hidden"
+
+	const { closeCart, cartItems } = useShoppingCart()
     
   return (
     <div className={`${customClass} fixed top-0 right-0 h-full w-1/4 bg-slate-500`}>
       <p >cart</p>
+      <button onClick={closeCart}>x</button>
       <div>
         {cartItems.map(item => (
           <CartItem key={item.id} {...item }/> 
