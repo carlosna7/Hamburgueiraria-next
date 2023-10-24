@@ -1,4 +1,5 @@
 'use client'
+
 import { useShoppingCart } from '@/context/ShoppingCartContext'
 import Link from 'next/link'
 import React from 'react'

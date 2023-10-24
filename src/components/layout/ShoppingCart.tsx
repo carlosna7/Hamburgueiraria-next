@@ -13,11 +13,13 @@ type ShoppingCartProps = {
 
 const ShoppingCart = ({ isOpen }: ShoppingCartProps ) => {
 
+  const customClass = isOpen ? "hidden" : "block"
+
 	const { cartItems } = useShoppingCart()
     
   return (
-    <div className='fixed top-0 right-0 h-full w-1/4 bg-slate-500'>
-      <p>cart</p>
+    <div className={`${customClass} fixed top-0 right-0 h-full w-1/4 bg-slate-500`}>
+      <p >cart</p>
       <div>
         {cartItems.map(item => (
           <CartItem key={item.id} {...item }/> 
