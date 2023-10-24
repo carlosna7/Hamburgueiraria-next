@@ -1,24 +1,23 @@
 'use client'
 
 import { useShoppingCart } from '@/context/ShoppingCartContext'
-import React from 'react'
+import React, { useState } from 'react';
 import CartItem from './CartItem'
 import formatCurrency from '@/utilities/formatCurrency'
 import storeItems from '../../data/items.json'
 
+const ShoppingCart = () => {
 
-type ShoppingCartProps = {
-  isOpen: boolean
-}
+  const [ isOpen, setIsOpen ]  = useState(true)
 
-
-const ShoppingCart = ({ isOpen }: ShoppingCartProps ) => {
-
-  console.log(isOpen)
+  const closeCart = () => {
+    setIsOpen(false)
+    console.log("set false")
+  }
 
   const customClass = isOpen ? "block" : "hidden"
 
-	const { closeCart, cartItems } = useShoppingCart()
+	const { cartItems } = useShoppingCart()
     
   return (
     <div className={`${customClass} fixed top-0 right-0 h-full w-1/4 bg-slate-500`}>

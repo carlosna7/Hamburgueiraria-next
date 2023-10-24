@@ -22,7 +22,7 @@ export default function RootLayout({
       <html lang="pt-br">
       <body className={inter.className}>
         <Navbar/>
-        <ShoppingCart isOpen={true}/>
+        <ShoppingCart/>
         {children}
       </body>
     </html>
