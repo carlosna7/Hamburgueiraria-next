@@ -19,7 +19,6 @@ const ShoppingCart = ({ isOpen }: ShoppingCartProps ) => {
     <div className='fixed top-0 right-0 h-full w-1/4 bg-slate-500'>
       <p>cart</p>
       <div>
-        teste
         {cartItems.map(item => (
           <CartItem key={item.id} {...item }/> 
         )) }
