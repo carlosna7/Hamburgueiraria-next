@@ -16,21 +16,21 @@ const StoreItem = ({id, name, price, imgUrl }: StoreItemProps) => {
 	const quantity: number = getItemQuantity(id)
 
   return (
-    <div className='flex flex-col w-96'>
+    <div className='flex flex-col w-96 border-2 border-black rounded-xl m-4'>
 
-			<img className='h-52 w-full object-cover' src={imgUrl} alt="img" />
+			<img className='h-52 w-full object-cover rounded-xl bg-orange-200' src={imgUrl} alt="img" />
         
-			<div className='flex justify-between'>
+			<div className='flex justify-between p-4'>
 				<p>{name}</p>
 				<p>{formatCurrency(price)}</p>
 			</div>
 
-			<div className='flex flex-col gap-4 items-center'>
+			<div className='flex flex-col gap-4 items-center px-4 pb-4'>
 				{quantity === 0 ? (
 					<button className='bg-blue-500 p-2 rounded-md' onClick={() => increaseCardQuantity(id)}>Add to card</button>
 				) : 
-				<div className='flex flex-col gap-2 items-center'>
-					 <div className='flex items-center'>
+				<div className='flex flex-col gap-4 items-center'>
+					 <div className='flex items-center gap-4'>
 						<button className='text-3xl bg-blue-500 px-2 rounded-md' onClick={() => decreaseCardQuantity(id)}>-</button>
 						<span>{quantity} in cart</span>
 						<button className='text-3xl bg-blue-500 px-2 rounded-md' onClick={() => increaseCardQuantity(id)}>+</button>

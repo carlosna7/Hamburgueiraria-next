@@ -13,13 +13,16 @@ const Navbar = () => {
 
 			<ul className='flex items-center gap-6'>
 				<li>
-					<Link href="/">home</Link>
+					<Link href="/">Home</Link>
 				</li>
 				<li>
-					<Link href="/cardapio">store</Link>
+					<Link href="/cardapio">Store</Link>
 				</li>
 				<li>
-					<Link href="/about">about</Link>
+					<Link href="/about">About</Link>
+				</li>
+				<li>
+					<Link href="/apps">App</Link>
 				</li>
 			</ul>
 

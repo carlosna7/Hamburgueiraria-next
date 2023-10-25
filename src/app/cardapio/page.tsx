@@ -8,7 +8,7 @@ import StoreItem from '@/components/layout/StoreItem'
 
 //mudar para cardápio
 
-const Store = () => {
+const Cardapio = () => {
   return (
     <Section>
       <h1 className='font-bold text-4xl'>Cardápio</h1>
@@ -21,4 +21,4 @@ const Store = () => {
   )
 }
 
-export default Store
+export default Cardapio
