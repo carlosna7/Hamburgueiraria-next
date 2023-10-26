@@ -18,8 +18,11 @@ import Section from "@/components/layout/Section";
 
 export default function Home() {
   return (
-    <Section>
-      <p className='font-bold text-4xl'>home</p>
+    <Section className="relative" >
+      <div>
+        <img className="absolute top-0 right-0 w-screen" src="../home-img.png" alt="" />
+        <p className='absolute font-bold text-4xl text-gray-50'>teste</p>
+      </div>
     </Section>
   )
 }
