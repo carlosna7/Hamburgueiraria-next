@@ -9,7 +9,7 @@ const Navbar = () => {
 	const { openCart, cartQuantity } = useShoppingCart()
 
 	return (
-		<div className='flex justify-between px-16 p-4 gap-4 bg-gray-400 '>
+		<div className='z-10 flex justify-between px-16 p-4 gap-4 bg-gray-400 '>
 
 			<ul className='flex items-center gap-6'>
 				<li>

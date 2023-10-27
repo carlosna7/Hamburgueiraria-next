@@ -20,7 +20,8 @@ export default function Home() {
   return (
     <Section className="relative" >
       <div>
-        <img className="absolute top-0 right-0 w-screen" src="../home-img.png" alt="" />
+        <img className="z-0 absolute top-0 right-0 w-screen" src="../home-img.png" alt="" />
+        
         <p className='absolute font-bold text-4xl text-gray-50'>teste</p>
       </div>
     </Section>

@@ -17,7 +17,7 @@ const ShoppingCart = () => {
   const { isOpen, closeCart, cartItems } = useShoppingCart()
     
   return (
-    <div className={`${isOpen ? 'block' : 'hidden'} fixed top-0 right-0 h-full w-1/4 bg-slate-500`}>
+    <div className={`${isOpen ? 'block' : 'hidden'} z-10 fixed top-0 right-0 h-full w-1/4 bg-slate-500`}>
       <p >cart</p>
       <button onClick={closeCart}>x</button>
       <div>
