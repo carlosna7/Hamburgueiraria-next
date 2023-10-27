@@ -1,11 +1,14 @@
 import Navbar from '@/components/layout/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Lilita_One } from 'next/font/google'
 import { ShoppingCartProvider } from '@/context/ShoppingCartContext'
 import ShoppingCart from '@/components/layout/ShoppingCart'
 
-const inter = Inter({ subsets: ['latin'] })
+const lilita = Lilita_One({ 
+  subsets: ['latin'],
+  weight: '400'
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -20,13 +23,12 @@ export default function RootLayout({
   return (
     <ShoppingCartProvider>
       <html lang="pt-br">
-      <body className={inter.className}>
+      <body className={lilita.className}>
         <Navbar/>
         <ShoppingCart/>
         {children}
       </body>
     </html>
     </ShoppingCartProvider>
-    
   )
 }

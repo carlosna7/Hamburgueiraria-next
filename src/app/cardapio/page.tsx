@@ -12,11 +12,13 @@ const Cardapio = () => {
   return (
     <Section>
       <h1 className='font-bold text-4xl'>Cardápio</h1>
-      {storeItems.map(item => (
-        <div key={item.id}>
-          <StoreItem {...item}/>
-        </div>
-      ))}
+      <div className='grid grid-cols-4'>
+        {storeItems.map(item => (
+          <div className='' key={item.id}>
+            <StoreItem {...item}/>
+          </div>
+        ))}
+      </div>
     </Section>
   )
 }

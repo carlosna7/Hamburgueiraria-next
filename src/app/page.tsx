@@ -21,8 +21,11 @@ export default function Home() {
     <Section className="relative" >
       <div>
         <img className="z-0 absolute top-0 right-0 w-screen" src="../home-img.png" alt="" />
-        
-        <p className='absolute font-bold text-4xl text-gray-50'>teste</p>
+
+        <div className="absolute">
+          <p className='font-bold text-7xl text-gray-50'>A CASA DE HAMBURGUER</p>
+          <p className='font-bold text-7xl text-gray-50'>A CASA DE HAMBURGUER</p>
+        </div>
       </div>
     </Section>
   )

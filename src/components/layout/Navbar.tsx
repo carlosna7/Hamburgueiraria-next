@@ -3,15 +3,16 @@
 import { useShoppingCart } from '@/context/ShoppingCartContext'
 import Link from 'next/link'
 // import React, { useState } from 'react'
+import { MdFastfood } from 'react-icons/md'
 
 const Navbar = () => {
 
 	const { openCart, cartQuantity } = useShoppingCart()
 
 	return (
-		<div className='z-10 flex justify-between px-16 p-4 gap-4 bg-gray-400 '>
+		<div className='z-10 flex justify-between px-16 p-4 gap-4 bg-amber-100 h-20'>
 
-			<ul className='flex items-center gap-6'>
+			<ul className='flex items-center gap-6 text-3xl text-amber-800'>
 				<li>
 					<Link href="/">Home</Link>
 				</li>
@@ -26,11 +27,17 @@ const Navbar = () => {
 				</li>
 			</ul>
 
-			<div className='relative'>
-				<button className='font-bold border-2 border-black rounded-full p-3' onClick={openCart}>$ $</button>
-				{cartQuantity > 0 && (
-					<div className='absolute bottom-0 right-0 bg-red-400 rounded-full px-2'>{cartQuantity}</div>
+			<div className=''>
+				<button className='flex rounded-full bg-red-500 text-white p-2 gap-2' onClick={openCart}>
+					<MdFastfood className='text-3xl' />
+					{cartQuantity > 0 && (
+					<div className='text-xs font-thin '>
+						<p>valor</p>
+						<p>Itens {cartQuantity}</p>
+					</div>
 				)}
+				</button>
+				
 			</div>
 
 		</div>
