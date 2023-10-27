@@ -21,37 +21,17 @@ import Section from '@/components/layout/Section'
 
 export default function Home() {
   const [imgSize, setImgSize] = useState<{ width: number; height: number }>({ width: 0, height: 0 });
-  
-  useEffect(() => {
-    const handleResize = () => {
-      if (imgRef.current) {
-        const width: number = imgRef.current.width;
-        const height: number = imgRef.current.height;
-        setImgSize({ width, height });
-      }
-    };
 
-    // Adiciona um ouvinte de evento para redimensionamento da janela
-    window.addEventListener('resize', handleResize);
-
-    // Chama a função de redimensionamento quando o componente é montado
-    handleResize();
-
-    // Remove o ouvinte de evento quando o componente é desmontado
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []); // O segundo argumento [] faz com que este efeito só seja executado uma vez (no momento do montagem/desmontagem do componente)
-
-  const imgRef = React.createRef<HTMLImageElement>();
-
-  console.log(typeof imgSize.height)
+  const handleImageLoad = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    const target = event.target as HTMLImageElement;
+    setImgSize({ width: target.width, height: target.height });
+  };
 
   return (
     <Section className="relative">
       <div>
         <img
-          ref={imgRef}
+          onLoad={handleImageLoad}
           className="z-0 absolute top-0 right-0 w-screen opacity-5"
           src="../home-img.png"
           alt=""
