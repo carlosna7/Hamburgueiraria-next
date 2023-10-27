@@ -1,4 +1,7 @@
-import Section from "@/components/layout/Section";
+'use client'
+
+import React, { useState, useEffect } from 'react';
+import Section from '@/components/layout/Section'
 
 // mudar store para cardápio
 // mudar about para Quem somos
@@ -17,16 +20,46 @@ import Section from "@/components/layout/Section";
 // https://www.mcdonalds.com.br (footer)
 
 export default function Home() {
-  return (
-    <Section className="relative" >
-      <div>
-        <img className="z-0 absolute top-0 right-0 w-screen" src="../home-img.png" alt="" />
+  const [imgSize, setImgSize] = useState<{ width: number; height: number }>({ width: 0, height: 0 });
+  
+  useEffect(() => {
+    const handleResize = () => {
+      if (imgRef.current) {
+        const width: number = imgRef.current.width;
+        const height: number = imgRef.current.height;
+        setImgSize({ width, height });
+      }
+    };
 
-        <div className="absolute">
-          <p className='font-bold text-7xl text-gray-50'>A CASA DE HAMBURGUER</p>
-          <p className='font-bold text-7xl text-gray-50'>A CASA DE HAMBURGUER</p>
-        </div>
+    // Adiciona um ouvinte de evento para redimensionamento da janela
+    window.addEventListener('resize', handleResize);
+
+    // Chama a função de redimensionamento quando o componente é montado
+    handleResize();
+
+    // Remove o ouvinte de evento quando o componente é desmontado
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); // O segundo argumento [] faz com que este efeito só seja executado uma vez (no momento do montagem/desmontagem do componente)
+
+  const imgRef = React.createRef<HTMLImageElement>();
+
+  console.log(typeof imgSize.height)
+
+  return (
+    <Section className="relative">
+      <div>
+        <img
+          ref={imgRef}
+          className="z-0 absolute top-0 right-0 w-screen opacity-5"
+          src="../home-img.png"
+          alt=""
+        />
+      </div>
+      <div className={`pt-[${imgSize.height}px]`}>
+        Altura da imagem: {imgSize.height}
       </div>
     </Section>
-  )
+  );
 }

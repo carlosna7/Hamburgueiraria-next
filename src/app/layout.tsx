@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Lilita_One } from 'next/font/google'
 import { ShoppingCartProvider } from '@/context/ShoppingCartContext'
 import ShoppingCart from '@/components/layout/ShoppingCart'
+import Footer from '@/components/layout/Footer'
 
 const lilita = Lilita_One({ 
   subsets: ['latin'],
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Navbar/>
         <ShoppingCart/>
         {children}
+        <Footer/>
       </body>
     </html>
     </ShoppingCartProvider>
