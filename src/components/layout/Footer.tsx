@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from './Section'
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -50,6 +51,32 @@ const Footer = () => {
             <li>WhatsApp</li>
             <li>Twitter</li>
           </ul>
+        </div>
+
+      </div>
+
+      <div>
+        <div>
+          <FaFacebookF/>
+          <FaTwitter />
+          <FaInstagram />
+          <FaYoutube />
+        </div>
+
+        <div>
+          <img className='h-[40px]' src="../appImg.png" alt="" />
+          <img className='h-[40px]' src="../googlePlayImg.png" alt="" />
+        </div>
+      </div>
+
+      <div>
+
+        <div>
+          privacidade e termos e condições
+        </div>
+
+        <div>
+          logo, nome e ano
         </div>
 
       </div>
