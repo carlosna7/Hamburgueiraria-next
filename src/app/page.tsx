@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Section from '@/components/layout/Section'
 
 // mudar store para cardápio
@@ -20,26 +20,26 @@ import Section from '@/components/layout/Section'
 // https://www.mcdonalds.com.br (footer)
 
 export default function Home() {
-  const [imgSize, setImgSize] = useState<{ width: number; height: number }>({ width: 0, height: 0 });
+  const [imgSize, setImgSize] = useState<{ width: number; height: number }>({ width: 0, height: 0 })
+
 
   const handleImageLoad = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
-    const target = event.target as HTMLImageElement;
-    setImgSize({ width: target.width, height: target.height });
-  };
+    const target = event.target as HTMLImageElement
+    setImgSize({ width: target.width, height: target.height })
+  }
 
-  return (
+  return (<>
+    <img
+      onLoad={handleImageLoad}
+      className="z-0 top-0 right-0 w-screen"
+      src="../home-img.png"
+      alt=""
+    />
+
     <Section className="relative">
-      <div>
-        <img
-          onLoad={handleImageLoad}
-          className="z-0 absolute top-0 right-0 w-screen opacity-5"
-          src="../home-img.png"
-          alt=""
-        />
-      </div>
-      <div className={`pt-[${imgSize.height}px]`}>
-        Altura da imagem: {imgSize.height}
+      <div className={`pt-3/5`}>
+        Altura da imagem: 
       </div>
     </Section>
-  );
+  </>)
 }
