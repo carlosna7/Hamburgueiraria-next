@@ -20,17 +20,9 @@ import Section from '@/components/layout/Section'
 // https://www.mcdonalds.com.br (footer)
 
 export default function Home() {
-  const [imgSize, setImgSize] = useState<{ width: number; height: number }>({ width: 0, height: 0 })
-
-
-  const handleImageLoad = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
-    const target = event.target as HTMLImageElement
-    setImgSize({ width: target.width, height: target.height })
-  }
 
   return (<>
     <img
-      onLoad={handleImageLoad}
       className="z-0 top-0 right-0 w-screen"
       src="../home-img.png"
       alt=""

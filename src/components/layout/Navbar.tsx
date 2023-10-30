@@ -13,8 +13,8 @@ const Navbar = () => {
 
 	return (<>
 
-		<div className='z-10 px-48 bg-amber-100 '>
-			<div className='flex justify-between items-center text-amber-800 border-b-2 border-b-amber-800 p-2'>
+		<div className='z-10 px-24 bg-amber-100 '>
+			<div className='flex justify-between items-center text-amber-800 border-b-2 border-b-amber-800 px-24 p-2'>
 				<p>baixe nosso app</p>
 				<div className='flex items-center bg-amber-800 p-1 rounded'>
 					<span className='text-amber-100 text-2xl'><BsPhone/></span>
@@ -24,7 +24,7 @@ const Navbar = () => {
 		</div>
 
 
-		<div className='z-10 flex justify-between items-center px-24 p-4 gap-4 bg-amber-100 h-24'>
+		<div className='z-10 flex  justify-between items-center px-24 p-4 gap-4 bg-amber-100 h-24'>
 
 			<div className='text-5xl text-white bg-red-500 p-2 rounded-full'>
 				<GiHamburger />
@@ -35,7 +35,7 @@ const Navbar = () => {
 					<Link href="/">Home</Link>
 				</li>
 				<li>
-					<Link href="/cardapio">Store</Link>
+					<Link href="/cardapio">Menu</Link>
 				</li>
 				<li>
 					<Link href="/about">About</Link>
