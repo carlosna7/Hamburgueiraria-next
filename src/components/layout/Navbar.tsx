@@ -5,6 +5,7 @@ import Link from 'next/link'
 // import React, { useState } from 'react'
 import { MdFastfood } from 'react-icons/md'
 import { GiHamburger } from 'react-icons/gi'
+import { BsPhone } from 'react-icons/bs'
 
 const Navbar = () => {
 
@@ -12,9 +13,16 @@ const Navbar = () => {
 
 	return (<>
 
-		<div className='z-10 flex justify-between items-center px-48 p-4 bg-yellow-100'>
-			<p>baixe nosso app</p>
+		<div className='z-10 px-48 bg-amber-100 '>
+			<div className='flex justify-between items-center text-amber-800 border-b-2 border-b-amber-800 p-2'>
+				<p>baixe nosso app</p>
+				<div className='flex items-center bg-amber-800 p-1 rounded'>
+					<span className='text-amber-100 text-2xl'><BsPhone/></span>
+					<p className='text-amber-100'>aplicativo</p>
+				</div>
+			</div>
 		</div>
+
 
 		<div className='z-10 flex justify-between items-center px-24 p-4 gap-4 bg-amber-100 h-24'>
 
