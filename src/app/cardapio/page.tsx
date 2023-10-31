@@ -11,7 +11,7 @@ import StoreItem from '@/components/layout/StoreItem'
 const Cardapio = () => {
   return (
     <Section>
-      <h1 className='font-bold text-4xl'>Cardápio</h1>
+      <h1 className='font-bold pb-16 text-4xl'>Cardápio</h1>
       <div className='grid grid-cols-4'>
         {storeItems.map(item => (
           <div className='' key={item.id}>

@@ -4,6 +4,9 @@ import React from 'react'
 const About = () => {
   return (
     <Section className='flex flex-col gap-16'>
+
+      <h1 className='font-bold pb-16 text-4xl'>About</h1>
+
       <div className='flex justify-between'>
 
         <div className='h-[450px] w-[450px] bg-gray-400'>

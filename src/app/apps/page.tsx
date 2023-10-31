@@ -4,7 +4,7 @@ import React from 'react'
 const Apps = () => {
   return (
     <Section>
-    <p className='font-bold text-4xl'>Aplicativo</ p>
+      <h1 className='font-bold pb-16 text-4xl'>Aplicativo</h1>
   </Section>
   )
 }

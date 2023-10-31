@@ -76,14 +76,16 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='pt-4'>
+      <div className='flex justify-between pt-4'>
 
-        <div>
-          privacidade e termos e condições
+        <div className='flex gap-8'>
+          <p>Privacidade</p>
+          <p>Termos e condições</p>
         </div>
 
-        <div>
-          logo, nome e ano
+        <div className='flex gap-8'>
+          <img src="" alt="LOGO" />
+          <p>Hamburgueiraria Next, 2023</p>
         </div>
 
       </div>

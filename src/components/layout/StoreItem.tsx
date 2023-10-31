@@ -16,7 +16,7 @@ const StoreItem = ({id, name, price, imgUrl }: StoreItemProps) => {
 	const quantity: number = getItemQuantity(id)
 
   return (
-    <div className='flex flex-col w-96 border-2 border-black rounded-xl m-4'>
+    <div className='flex flex-col w-96 border-2 border-black rounded-xl'>
 
 			<img className='h-52 w-full object-cover rounded-xl bg-orange-200' src={imgUrl} alt="img" />
         
