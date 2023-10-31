@@ -8,7 +8,7 @@ const Footer = () => {
       <div className='flex bottom-0 justify-between'>
 
         <div>
-          <h3 className='font-bold text-2xl'>quem somos</h3>
+          <h3 className='font-bold text-2xl pb-4'>Quem somos</h3>
           <ul className='font-extralight text-gray-800 cursor-pointer'>
             <li >Intitucional</li>
             <li>Franquias</li>
@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className='font-bold text-2xl'>Família</h3>
+          <h3 className='font-bold text-2xl pb-4'>Família</h3>
           <ul className='font-extralight text-gray-800 cursor-pointer'>
             <li>Lançamentos</li>
             <li>Promoções</li>
@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className='font-bold text-2xl'>Para você</h3>
+          <h3 className='font-bold text-2xl pb-4'>Para você</h3>
           <ul className='font-extralight text-gray-800 cursor-pointer'>
             <li>App</li>
             <li>Delivery</li>
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         
         <div>
-          <h3 className='font-bold text-2xl'
+          <h3 className='font-bold text-2xl pb-4'
           >Contato</h3>
           <ul className='font-extralight text-gray-800 cursor-pointer'>
             <li>Instagram</li>
@@ -54,7 +54,7 @@ const Footer = () => {
 
       </div>
 
-      <div className='flex justify-between'>
+      <div className='flex justify-between pt-16 pb-4 border-gray-700 border-b-[1px] '>
         <div className='flex gap-8 text-2xl'>
           <div className='rounded-full p-2 border-2 border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white'>
             <FaFacebookF />
@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div>
+      <div className='pt-4'>
 
         <div>
           privacidade e termos e condições
