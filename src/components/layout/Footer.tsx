@@ -39,7 +39,6 @@ const Footer = () => {
             <li>Drive-thru</li>
             <li>Lorem</li>
             <li>Intitucional</li>
-            <li></li>
           </ul>
         </div>
         
@@ -55,15 +54,15 @@ const Footer = () => {
 
       </div>
 
-      <div>
-        <div>
+      <div className='flex justify-between'>
+        <div className='flex gap-2'>
           <FaFacebookF/>
           <FaTwitter />
           <FaInstagram />
           <FaYoutube />
         </div>
 
-        <div>
+        <div className='flex gap-4'>
           <img className='h-[40px]' src="../appImg.png" alt="" />
           <img className='h-[40px]' src="../googlePlayImg.png" alt="" />
         </div>
