@@ -55,11 +55,19 @@ const Footer = () => {
       </div>
 
       <div className='flex justify-between'>
-        <div className='flex gap-2'>
-          <FaFacebookF/>
-          <FaTwitter />
-          <FaInstagram />
-          <FaYoutube />
+        <div className='flex gap-8 text-2xl'>
+          <div className='rounded-full p-2 border-2 border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white'>
+            <FaFacebookF />
+          </div>
+          <div className='rounded-full p-2 border-2 border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-white'>
+            <FaTwitter />
+          </div>
+          <div className='rounded-full p-2 border-2 border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white'>
+            <FaInstagram />
+          </div>
+          <div className='rounded-full p-2 border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white'>
+            <FaYoutube />
+          </div>
         </div>
 
         <div className='flex gap-4'>
