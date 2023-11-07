@@ -78,28 +78,28 @@
   },
   {
     "id": 12,
-    "category": "sobremesa",
+    "category": "bebidas",
     "name": "Book",
     "price": 25,
     "imgUrl": "/burger12.png"
   },
   {
     "id": 13,
-    "category": "sobremesa",
+    "category": "bebidas",
     "name": "Book",
     "price": 25,
     "imgUrl": "/burger13.png"
   },
   {
     "id": 14,
-    "category": "sobremesa",
+    "category": "bebidas",
     "name": "Book",
     "price": 25,
     "imgUrl": "/burger14.png"
   },
   {
     "id": 15,
-    "category": "sobremesa",
+    "category": "bebidas",
     "name": "Book",
     "price": 25,
     "imgUrl": "/burger15.png"
