@@ -1,90 +1,105 @@
 [
   {
     "id": 1,
+    "category": "carne",
     "name": "burger1",
     "price": 25,
     "imgUrl": "/burger1.png"
   },
   {
     "id": 2,
-    "name": "burger2",
-    "price": 25,
-    "imgUrl": "/burger2.png"
-  },
-  {
-    "id": 3,
-    "name": "burger3",
-    "price": 25,
-    "imgUrl": "/burger3.png"
-  },
-  {
-    "id": 4,
-    "name": "burger4",
-    "price": 25,
-    "imgUrl": "/burger4.png"
-  },
-  {
-    "id": 5,
-    "name": "burger5",
-    "price": 25,
-    "imgUrl": "/burger5.png"
-  },
-  {
-    "id": 6,
-    "name": "Book",
-    "price": 25,
-    "imgUrl": "/burger6.png"
-  },
-  {
-    "id": 7,
+    "category": "carne",
     "name": "Book",
     "price": 25,
     "imgUrl": "/burger7.png"
   },
   {
-    "id": 8,
+    "id": 3,
+    "category": "carne",
     "name": "Book",
     "price": 25,
     "imgUrl": "/burger8.png"
   },
   {
-    "id": 9,
+    "id": 4,
+    "category": "carne",
     "name": "Book",
     "price": 25,
     "imgUrl": "/burger9.png"
   },
   {
+    "id": 5,
+    "category": "carne",
+    "name": "Book",
+    "price": 25,
+    "imgUrl": "/burger6.png"
+  },
+  {
+    "id": 6,
+    "category": "frango",
+    "name": "burger4",
+    "price": 25,
+    "imgUrl": "/burger4.png"
+  },
+  {
+    "id": 7,
+    "category": "frango",
+    "name": "burger5",
+    "price": 25,
+    "imgUrl": "/burger5.png"
+  },
+  {
+    "id": 8,
+    "category": "bacon",
+    "name": "burger2",
+    "price": 25,
+    "imgUrl": "/burger2.png"
+  },
+  {
+    "id": 9,
+    "category": "bacon",
+    "name": "burger3",
+    "price": 25,
+    "imgUrl": "/burger3.png"
+  },
+  {
     "id": 10,
+    "category": "acompanhamento",
     "name": "Book",
     "price": 25,
     "imgUrl": "/burger10.png"
   },
   {
     "id": 11,
+    "category": "acompanhamento",
     "name": "Book",
     "price": 25,
     "imgUrl": "/burger11.png"
   },
   {
     "id": 12,
+    "category": "sobremesa",
     "name": "Book",
     "price": 25,
     "imgUrl": "/burger12.png"
   },
   {
     "id": 13,
+    "category": "sobremesa",
     "name": "Book",
     "price": 25,
     "imgUrl": "/burger13.png"
   },
   {
     "id": 14,
+    "category": "sobremesa",
     "name": "Book",
     "price": 25,
     "imgUrl": "/burger14.png"
   },
   {
     "id": 15,
+    "category": "sobremesa",
     "name": "Book",
     "price": 25,
     "imgUrl": "/burger15.png"
