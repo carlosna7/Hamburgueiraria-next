@@ -22,9 +22,10 @@ const Cardapio = () => {
 
       <div className='flex justify-between items-start'>
         <h1 className='font-bold pb-16 text-4xl'>Cardápio</h1>
-        <FilterBox />
+        <FilterBox />   {/* criar um modal que abre ao apertar o botão, nele será possível escolher as opções de filtros dos itens no cardápio */}
       </div>
 
+      <h2 className='text-3xl'>Sanduíches de Carne</h2>
       <div className='grid grid-cols-4'>
         {carneItems.map(item => (
           <div key={item.id}>
@@ -33,6 +34,7 @@ const Cardapio = () => {
         ))}
       </div>
 
+      <h2 className='text-3xl'>Sanduíches de Frango</h2>
       <div className='grid grid-cols-4'>
         {frangoItems.map(item => (
           <div key={item.id}>
@@ -41,6 +43,7 @@ const Cardapio = () => {
         ))}
       </div>
 
+      <h2 className='text-3xl'>Sanduíches com Bacon</h2>
       <div className='grid grid-cols-4'>
         {baconItems.map(item => (
           <div key={item.id}>
@@ -49,6 +52,7 @@ const Cardapio = () => {
         ))}
       </div>
 
+      <h2 className='text-3xl'>Acompanhamentos</h2>
       <div className='grid grid-cols-4'>
         {acompanhamentoItems.map(item => (
           <div key={item.id}>
@@ -57,6 +61,7 @@ const Cardapio = () => {
         ))}
       </div>
 
+      <h2 className='text-3xl'>Bebidas</h2>
       <div className='grid grid-cols-4'>
         {bebidasItems.map(item => (
           <div key={item.id}>
