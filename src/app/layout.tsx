@@ -3,7 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Lilita_One } from 'next/font/google'
 import { ShoppingCartProvider } from '@/context/ShoppingCartContext'
-import ShoppingCart from '@/components/layout/ShoppingCart'
+import ShoppingCart from '@/components/elements/ShoppingCart'
 import Footer from '@/components/layout/Footer'
 
 const lilita = Lilita_One({ 
