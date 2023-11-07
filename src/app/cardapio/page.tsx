@@ -22,7 +22,12 @@ const Cardapio = () => {
 
       <div className='flex justify-between items-start'>
         <h1 className='font-bold pb-16 text-4xl'>Cardápio</h1>
-        <FilterBox />   {/* criar um modal que abre ao apertar o botão, nele será possível escolher as opções de filtros dos itens no cardápio */}
+        <FilterBox />   
+        
+        
+        {/* criar um modal que abre ao apertar o botão, nele será possível escolher as opções de filtros dos itens no cardápio */}
+
+        
       </div>
 
       <h2 className='text-3xl'>Sanduíches de Carne</h2>
