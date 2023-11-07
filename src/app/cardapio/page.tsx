@@ -1,14 +1,24 @@
+'use client'
+
 import Section from '@/components/layout/Section'
-import React from 'react'
+import React, { useState } from 'react';
 import storeItems from "../../data/items.json"
 import StoreItem from '@/components/elements/StoreItem'
 import FilterBox from '@/components/elements/FilterBox'
+import FilterModal from '@/components/elements/FilterModal'
 // https://www.burgerking.com.br/cardapio 
 // copiar grid e mudar alguns nomes
 
 //mudar para cardápio
 
 const Cardapio = () => {
+
+  const [ isOpen, setIsOpen ] = useState<boolean>(false)
+
+  const openModal = () => {
+    console.log("aberto")
+    setIsOpen(true)
+  }
 
   const carneItems = storeItems.filter(item => item.category === "carne")
   const frangoItems = storeItems.filter(item => item.category === "frango")
@@ -22,13 +32,10 @@ const Cardapio = () => {
 
       <div className='flex justify-between items-start'>
         <h1 className='font-bold pb-16 text-4xl'>Cardápio</h1>
-        <FilterBox />   
-        
-        
-        {/* criar um modal que abre ao apertar o botão, nele será possível escolher as opções de filtros dos itens no cardápio */}
-
-        
+        <FilterBox onClick={openModal} />   
       </div>
+
+      <FilterModal isOpen={isOpen} setIsOpen={setIsOpen} />
 
       <h2 className='text-3xl'>Sanduíches de Carne</h2>
       <div className='grid grid-cols-4'>
