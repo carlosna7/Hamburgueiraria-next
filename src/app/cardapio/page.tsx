@@ -13,7 +13,7 @@ import FilterModal from '@/components/elements/FilterModal'
 
 const Cardapio = () => {
 
-  const [ isOpen, setIsOpen ] = useState<boolean>(false)
+  const [ isOpen, setIsOpen ] = useState<boolean>(true)
 
   const openModal = () => {
     console.log("aberto")
