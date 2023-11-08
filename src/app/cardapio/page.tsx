@@ -16,7 +16,6 @@ const Cardapio = () => {
   const [ isOpen, setIsOpen ] = useState<boolean>(true)
 
   const openModal = () => {
-    console.log("aberto")
     setIsOpen(true)
   }
 
