@@ -13,18 +13,18 @@ const Navbar = () => {
 
 	return (<>
 
-		<div className='z-10 px-24 bg-amber-100 '>
+		<div className='z-10 px-48 bg-amber-100 '>
 			<div className='flex justify-between items-center text-amber-800 border-b-2 border-b-amber-800 px-24 p-2'>
 				<p>baixe nosso app</p>
-				<div className='flex items-center bg-amber-800 p-1 rounded'>
+				<Link href="/apps" className='flex items-center bg-amber-800 p-1 rounded'>
 					<span className='text-amber-100 text-2xl'><BsPhone/></span>
 					<p className='text-amber-100'>aplicativo</p>
-				</div>
+				</Link>
 			</div>
 		</div>
 
 
-		<div className='z-10 flex  justify-between items-center px-24 p-4 gap-4 bg-amber-100 h-24'>
+		<div className='z-10 flex justify-between items-center px-48 p-4 gap-4 bg-amber-100 h-24'>
 
 			<div className='text-5xl text-white bg-red-500 p-2 rounded-full'>
 				<GiHamburger />
@@ -45,7 +45,7 @@ const Navbar = () => {
 				</li>
 			</ul>
 
-			<div>
+			<div className='flex w-[100px] justify-end'>
 				<button className='flex rounded-full bg-red-500 text-white p-2 gap-2' onClick={openCart}>
 					<MdFastfood className='text-3xl' />
 					{cartQuantity > 0 && (
