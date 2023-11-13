@@ -4,15 +4,65 @@ import { BsCupStraw } from "react-icons/bs"
 import { GiChickenLeg, GiNachos } from "react-icons/gi"
 
 interface TModal {
-	isOpen: boolean
-	setIsOpen: (isOpen: boolean) => void
+	isOpen: boolean;
+	setIsOpen: (isOpen: boolean) => void;
+	setCarneAberto: (isOpen: boolean) => void;
+	carneAberto: boolean;
+	setFrangoAberto: (isOpen: boolean) => void;
+	frangoAberto: boolean;
+	setBaconAberto: (isOpen: boolean) => void;
+	baconAberto: boolean;
+	setAcompAberto: (isOpen: boolean) => void;
+	acompAberto: boolean;
+	setBebidaAberto: (isOpen: boolean) => void;
+	bebidaAberto: boolean;
 }
 
-const FilterModal = ({ isOpen, setIsOpen }: TModal) => {
+const FilterModal = ({ isOpen, setIsOpen, setCarneAberto, setFrangoAberto, setBaconAberto, setAcompAberto, setBebidaAberto }: TModal) => {
 
 	const closeModal = () => {
 		console.log("fechado")
 		setIsOpen(!isOpen)
+	}
+
+	const filtroCarne = () => {
+		setCarneAberto((prev: boolean) => {
+			const newState = !prev;
+
+			return newState
+		})
+	}
+
+	const filtroFrango = () => {
+		setFrangoAberto((prev: boolean) => {
+			const newState = !prev;
+
+			return newState
+		})
+	}
+
+	const filtroBacon = () => {
+		setBaconAberto((prev: boolean) => {
+			const newState = !prev;
+
+			return newState
+		})
+	}
+
+	const filtroAcomp = () => {
+		setAcompAberto((prev: boolean) => {
+			const newState = !prev;
+
+			return newState
+		})
+	}
+
+	const filtroBebida = () => {
+		setBebidaAberto((prev: boolean) => {
+			const newState = !prev;
+
+			return newState
+		})
 	}
 
 	if(isOpen) {
@@ -30,23 +80,23 @@ const FilterModal = ({ isOpen, setIsOpen }: TModal) => {
 					</div>
 
 					<div>
-						<div>
+						<div onClick={filtroCarne}>
 							<p>Sanduíche de Carne</p>
 							<FaBurger />
 						</div>
-						<div>
+						<div onClick={filtroFrango}>
 							<p>Sansuíche de Frango</p>
 							<GiChickenLeg />
 						</div>
-						<div>
+						<div onClick={filtroBacon}>
 							<p>Sanduíche com Bacon</p>
 							<FaBacon />
 						</div>
-						<div>
+						<div onClick={filtroAcomp}>
 							<p>Acompanhamentos</p>
 							<GiNachos />
 						</div>
-						<div>
+						<div onClick={filtroBebida}>
 							<p>Bebidas</p>
 							<BsCupStraw />
 						</div>
