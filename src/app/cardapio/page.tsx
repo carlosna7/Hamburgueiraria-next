@@ -56,14 +56,14 @@ const Cardapio = () => {
 
       {carneAberto ? (
         <> 
-        '<h2 className='text-3xl'>Sanduíches de Carne</h2>
+          <h2 className='text-3xl'>Sanduíches de Carne</h2>
           <div className='grid grid-cols-4'>
             {carneItems.map(item => (
               <div key={item.id}>
                 <StoreItem {...item}/>
               </div>
             ))}
-          </div>'
+          </div>
         </>
       ) : null }
       {frangoAberto ? (

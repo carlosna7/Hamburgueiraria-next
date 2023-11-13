@@ -1,7 +1,10 @@
 'use client'
 
-import { useShoppingCart } from '@/context/ShoppingCartContext'
 import Link from 'next/link'
+import { useShoppingCart } from '@/context/ShoppingCartContext'
+import formatCurrency from '@/utilities/formatCurrency'
+import storeItems from '../../data/items.json'
+
 // import React, { useState } from 'react'
 import { MdFastfood } from 'react-icons/md'
 import { GiHamburger } from 'react-icons/gi'
@@ -9,12 +12,12 @@ import { BsPhone } from 'react-icons/bs'
 
 const Navbar = () => {
 
-	const { openCart, cartQuantity } = useShoppingCart()
+	const { openCart, cartQuantity, cartItems } = useShoppingCart()
 
 	return (<>
 
 		<div className='z-10 px-48 bg-amber-100 '>
-			<div className='flex justify-between items-center text-amber-800 border-b-2 border-b-amber-800 px-24 p-2'>
+			<div className='flex justify-between items-center text-amber-800 border-b-2 border-b-amber-800 px-32 p-2'>
 				<p>baixe nosso app</p>
 				<Link href="/apps" className='flex items-center bg-amber-800 p-1 rounded'>
 					<span className='text-amber-100 text-2xl'><BsPhone/></span>
@@ -45,12 +48,17 @@ const Navbar = () => {
 				</li>
 			</ul>
 
-			<div className='flex w-[100px] justify-end'>
+			<div className='flex w-[120px] justify-end'>
 				<button className='flex rounded-full bg-red-500 text-white p-2 gap-2' onClick={openCart}>
 					<MdFastfood className='text-3xl' />
 					{cartQuantity > 0 && (
 					<div className='text-xs font-thin '>
-						<p>valor</p>
+						{formatCurrency(cartItems.reduce((total, cartItem) => {
+						const item = storeItems.find(i => i.id === cartItem.id)
+						
+						return total + (item?.price || 0) * cartItem.quantity
+						}, 0)
+						)}
 						<p>Itens {cartQuantity}</p>
 					</div>
 				)}
