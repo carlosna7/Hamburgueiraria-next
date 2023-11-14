@@ -16,10 +16,6 @@ export default function Home() {
       <div className='absolute left-48 inset-y-1/3'>
         <h1 className='text-7xl text-white'>Hamburgueiraria</h1>
         <h1 className='text-7xl text-white'>NEXT!</h1>
-
-        <div>
-          
-        </div>
       </div>
 
       <img
