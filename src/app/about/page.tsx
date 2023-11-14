@@ -5,7 +5,7 @@ const About = () => {
   return (
     <Section className='flex flex-col'>
 
-      <h1 className='font-bold pb-16 text-4xl'>About</h1>
+      <h1 className='font-bold pb-16 text-5xl'>About</h1>
 
       <div className='flex justify-between pb-16'>
 
