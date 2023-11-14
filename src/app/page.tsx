@@ -13,9 +13,9 @@ export default function Home() {
   return (<>
     <div className='relative'>
 
-      <div className='absolute left-48 inset-y-1/3'>
-        <h1 className='text-7xl text-white'>Hamburgueiraria</h1>
-        <h1 className='text-7xl text-white'>NEXT!</h1>
+      <div className='absolute left-48 inset-y-1/3 '>
+        <h1 className='text-7xl text-white font-bold'>Hamburgueiraria</h1>
+        <h1 className='text-7xl text-white pt-8'>NEXT!</h1>
       </div>
 
       <img
@@ -28,7 +28,7 @@ export default function Home() {
 
     <Section>
 
-      <h2 className='flex justify-center font-bold pb-16 text-5xl'>Trabalhamos para oferecer.</h2>
+      <h2 className='flex justify-center font-bold pb-24 text-4xl'>Trabalhamos para oferecer o melhor!</h2>
 
       <div className="flex justify-between">
         <div className='w-[400px] bg-amber-50 text-amber-900 rounded-lg p-4 hover:rounded-3xl hover:bg-amber-900 hover:text-white duration-500'>
@@ -66,7 +66,6 @@ export default function Home() {
           />
           <p className='text-center'>Disponibilizamos uma Variedade de ingredites na seleção de nossos produtos para o cardápio.</p>
         </div>
-
       </div>
     </Section>
   </>)

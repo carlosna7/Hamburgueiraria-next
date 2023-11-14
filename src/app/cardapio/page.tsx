@@ -31,7 +31,7 @@ const Cardapio = () => {
     <Section>
 
       <div className='flex justify-between items-start'>
-        <h1 className='font-bold pb-16 text-5xl'>Cardápio</h1>
+        <h1 className='flex justify-center font-bold pb-24 text-5xl'>Cardápio</h1>
         <FilterBox onClick={openModal} />  
       </div>
 
