@@ -30,36 +30,39 @@ export default function Home() {
 
       <h2 className='flex justify-center font-bold pb-16 text-5xl'>Trabalhamos para oferecer.</h2>
 
-      <div className="flex justify-around">
-        <div className='w-[350px]'>
-          <h3 className='flex justify-center text-2xl '>QUALIDADE</h3>
+      <div className="flex justify-between">
+        <div className='w-[400px] bg-amber-50 text-amber-900 rounded-lg p-4 hover:rounded-3xl hover:bg-amber-900 hover:text-white duration-500'>
+          <h3 className='flex justify-center text-2xl'>QUALIDADE</h3>
           <img
+            className='duration-500 hover:scale-90'
             src="../Hamburger-amico.png"
             alt=""
-            width={350}
-            height={350}
+            width={400}
+            height={400}
           />
           <p className='text-center'>Utilizamos de produtos selecinados desde sua origem, mantendo smepre um padrão de qualidade.</p>
         </div>
 
-        <div className='w-[350px]'>
+        <div className='w-[400px] bg-amber-50 text-amber-900 rounded-lg p-4 hover:rounded-3xl hover:bg-amber-900 hover:text-white duration-500'>
           <h3 className='flex justify-center text-2xl '>SABOR</h3>
           <img
+            className='duration-500 hover:scale-90'
             src="./Hamburger-bro.png"
             alt=""
-            width={350}
-            height={350}
+            width={400}
+            height={400}
           />
           <p className='text-center'>Oferecemos uma explosão de sabores a cada mordida. Cada vez que provar será experiência nova.</p>
         </div>
 
-        <div className='w-[350px]'>
+        <div className='w-[400px] bg-amber-50 text-amber-900 rounded-lg p-4 hover:rounded-3xl hover:bg-amber-900 hover:text-white duration-500'>
           <h3 className='flex justify-center text-2xl '>VARIEDADE</h3>
           <img
+            className='duration-500 hover:scale-90'
             src="./Hamburger-pana.png"
             alt=""
-            width={350}
-            height={350}
+            width={400}
+            height={400}
           />
           <p className='text-center'>Disponibilizamos uma Variedade de ingredites na seleção de nossos produtos para o cardápio.</p>
         </div>
