@@ -6,10 +6,6 @@ import storeItems from "../../data/items.json"
 import StoreItem from '@/components/elements/StoreItem'
 import FilterBox from '@/components/elements/FilterBox'
 import FilterModal from '@/components/elements/FilterModal'
-// https://www.burgerking.com.br/cardapio 
-// copiar grid e mudar alguns nomes
-
-//mudar para cardápio
 
 const Cardapio = () => {
 
