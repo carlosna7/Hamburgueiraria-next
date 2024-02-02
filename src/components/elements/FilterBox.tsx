@@ -4,7 +4,11 @@ import React, { useState } from 'react'
 // import { IoMdIceCream } from "react-icons/Io"
 import { HiAdjustmentsHorizontal } from "react-icons/hi2"
 
-const FilterBox = ({ onClick }) => {
+type ClickItensProps = {
+  onClick: any
+}
+
+const FilterBox = ({ onClick }: ClickItensProps) => {
 
   return (
     <div onClick={onClick} className='flex bg-red-500 p-2 px-8 rounded-lg items-center justify-center gap-20 text-white'>
