@@ -1,6 +1,3 @@
-'use client'
-
-import React, { useState } from 'react'
 // import { IoMdIceCream } from "react-icons/Io"
 import { HiAdjustmentsHorizontal } from "react-icons/hi2"
 
