@@ -11,7 +11,7 @@ type CartItemProps = {
   quantity: number
 }
 
-const CartItem = ({ id, quantity }: CartItemProps) => {
+const CartItems = ({ id, quantity }: CartItemProps) => {
 
   const { removeFromCart } = useShoppingCart()
   const item = storeItems.find(i => i.id === id)
@@ -39,4 +39,4 @@ const CartItem = ({ id, quantity }: CartItemProps) => {
   )
 }
 
-export default CartItem
+export default CartItems
