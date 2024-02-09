@@ -1,5 +1,4 @@
 import Section from '@/components/layout/Section'
-import Image from 'next/image'
 import React from 'react'
 
 const About = () => {
@@ -11,7 +10,7 @@ const About = () => {
       <div className='flex justify-between pb-16'>
 
         <div className='w-[600px] overflow-hidden rounded-3xl'>
-          <Image
+          <img
             className='duration-500 hover:scale-125'
             src="../about1.jpg"
             alt=""
@@ -44,7 +43,7 @@ const About = () => {
         </div>
 
         <div className='w-[600px] overflow-hidden rounded-3xl'>
-          <Image
+          <img
             className='duration-500 hover:scale-125'
             src="../about2.jpg"
             alt=""

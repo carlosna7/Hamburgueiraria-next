@@ -4,7 +4,6 @@ import { useShoppingCart } from '@/context/ShoppingCartContext'
 import React from 'react'
 import storeItems from '../../data/items.json'
 import formatCurrency from '@/utilities/formatCurrency'
-import Image from 'next/image'
 
 type CartItemProps = {
   id: number
@@ -24,7 +23,7 @@ const CartItems = ({ id, quantity }: CartItemProps) => {
     <div className='flex flex-col'>
       
       <div className='flex'>
-        <Image className='h-24 w-2/5 object-cover' src={item.imgUrl} alt="img" />
+        <img className='h-24 w-2/5 object-cover' src={item.imgUrl} alt="img" />
         <div>
           <p>{item.name} {quantity > 0 && <span>{quantity}x</span>}</p>
           <p>{formatCurrency(item.price)}</p>

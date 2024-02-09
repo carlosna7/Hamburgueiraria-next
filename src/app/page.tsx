@@ -1,5 +1,4 @@
 import Section from '@/components/layout/Section'
-import Image from 'next/image'
 
 // https://storyset.com/illustration/hamburger/bro (img hamburguer)
 // https://storyset.com/illustration/order-food/bro (img aplicativo)
@@ -19,7 +18,7 @@ export default function Home() {
         <h1 className='text-7xl text-white pt-8'>NEXT!</h1>
       </div>
 
-      <Image
+      <img
         className="z-0 top-0 right-0 w-screen"
         src="../home-img.png"
         alt=""
@@ -34,9 +33,9 @@ export default function Home() {
       <div className="flex justify-between">
         <div className='w-[400px] bg-amber-50 text-amber-900 rounded-lg p-4 hover:rounded-3xl hover:bg-amber-900 hover:text-white duration-500'>
           <h3 className='flex justify-center text-2xl'>QUALIDADE</h3>
-          <Image
+          <img
             className='duration-500 hover:scale-90'
-            src="../Hamburger-amico.png"
+            src="/Hamburger-amico.png"
             alt=""
             width={400}
             height={400}
@@ -46,9 +45,9 @@ export default function Home() {
 
         <div className='w-[400px] bg-amber-50 text-amber-900 rounded-lg p-4 hover:rounded-3xl hover:bg-amber-900 hover:text-white duration-500'>
           <h3 className='flex justify-center text-2xl '>SABOR</h3>
-          <Image
+          <img
             className='duration-500 hover:scale-90'
-            src="./Hamburger-bro.png"
+            src="/Hamburger-bro.png"
             alt=""
             width={400}
             height={400}
@@ -58,9 +57,9 @@ export default function Home() {
 
         <div className='w-[400px] bg-amber-50 text-amber-900 rounded-lg p-4 hover:rounded-3xl hover:bg-amber-900 hover:text-white duration-500'>
           <h3 className='flex justify-center text-2xl '>VARIEDADE</h3>
-          <Image
+          <img
             className='duration-500 hover:scale-90'
-            src="./Hamburger-pana.png"
+            src="/Hamburger-pana.png"
             alt=""
             width={400}
             height={400}
