@@ -4,7 +4,7 @@ import { useShoppingCart } from '@/context/ShoppingCartContext'
 import formatCurrency from '@/utilities/formatCurrency'
 import storeItems from '../../data/items.json'
 import { FaXmark } from "react-icons/fa6"
-import CartItem from '../layout/CartItem'
+// import CartItem from '../layout/CartItem'
 
 const ShoppingCart = () => {
 
@@ -15,11 +15,11 @@ const ShoppingCart = () => {
       <button onClick={closeCart} className='text-3xl'>
         <FaXmark />
       </button>
-      <div>
+      {/* <div>
         {cartItems.map(item => (
           <CartItem key={item.id} {...item }/> 
         )) }
-      </div>
+      </div> */}
       <div className='flex justify-end font-bold text-2xl'>
         Total 
         {formatCurrency(cartItems.reduce((total, cartItem) => {
