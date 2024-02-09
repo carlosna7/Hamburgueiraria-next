@@ -1,6 +1,7 @@
 import React from 'react'
 import Section from './Section'
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa"
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -71,8 +72,8 @@ const Footer = () => {
         </div>
 
         <div className='flex gap-4'>
-          <img className='h-[40px]' src="../appImg.png" alt="" />
-          <img className='h-[40px]' src="../googlePlayImg.png" alt="" />
+          <Image className='h-[40px]' src="../appImg.png" alt="" />
+          <Image className='h-[40px]' src="../googlePlayImg.png" alt="" />
         </div>
       </div>
 
@@ -84,7 +85,7 @@ const Footer = () => {
         </div>
 
         <div className='flex gap-8'>
-          <img src="" alt="LOGO" />
+          <Image src="" alt="LOGO" />
           <p>Hamburgueiraria Next, 2023</p>
         </div>
 

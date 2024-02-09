@@ -1,10 +1,10 @@
 'use client'
 
 import { useShoppingCart } from '@/context/ShoppingCartContext'
-import CartItem from '../layout/CartItem'
 import formatCurrency from '@/utilities/formatCurrency'
 import storeItems from '../../data/items.json'
 import { FaXmark } from "react-icons/fa6"
+import CartItem from '../layout/CartItem'
 
 const ShoppingCart = () => {
 

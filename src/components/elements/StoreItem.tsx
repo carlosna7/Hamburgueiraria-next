@@ -1,6 +1,7 @@
 'use client'
 import { useShoppingCart } from '@/context/ShoppingCartContext'
 import formatCurrency from '@/utilities/formatCurrency'
+import Image from 'next/image'
 import React from 'react'
 
 type StoreItemProps = {
@@ -18,7 +19,7 @@ const StoreItem = ({id, name, price, imgUrl }: StoreItemProps) => {
   return (
     <div className='flex flex-col w-96 border-2 border-black rounded-xl'>
 
-		<img className='h-52 w-full object-cover rounded-xl bg-orange-200' src={imgUrl} alt="img" />
+		<Image className='h-52 w-full object-cover rounded-xl bg-orange-200' src={imgUrl} alt="img" />
 	
 		<div className='flex justify-between p-4'>
 			<p>{name}</p>
