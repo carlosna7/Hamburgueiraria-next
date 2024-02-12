@@ -1,7 +1,7 @@
 'use client'
 
 import Section from '@/components/layout/Section'
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import storeItems from "../../data/items.json"
 import StoreItem from '@/components/elements/StoreItem'
 import FilterBox from '@/components/elements/FilterBox'
@@ -55,7 +55,7 @@ const Cardapio = () => {
           <h2 className='text-3xl'>Sanduíches de Carne</h2>
           <div className='grid grid-cols-4'>
             {carneItems.map(item => (
-              <div key={item.id}>
+              <div className='' key={item.id}>
                 <StoreItem {...item}/>
               </div>
             ))}

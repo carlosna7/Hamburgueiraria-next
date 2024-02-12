@@ -9,28 +9,28 @@
   {
     "id": 2,
     "category": "carne",
-    "name": "Book",
+    "name": "burger7",
     "price": 25,
     "imgUrl": "/burger7.png"
   },
   {
     "id": 3,
     "category": "carne",
-    "name": "Book",
+    "name": "burger8",
     "price": 25,
     "imgUrl": "/burger8.png"
   },
   {
     "id": 4,
     "category": "carne",
-    "name": "Book",
+    "name": "burger9",
     "price": 25,
     "imgUrl": "/burger9.png"
   },
   {
     "id": 5,
     "category": "carne",
-    "name": "Book",
+    "name": "burger6",
     "price": 25,
     "imgUrl": "/burger6.png"
   },
@@ -65,43 +65,43 @@
   {
     "id": 10,
     "category": "acompanhamento",
-    "name": "Book",
+    "name": "acomp1",
     "price": 25,
-    "imgUrl": "/burger10.png"
+    "imgUrl": "/acomp1.png"
   },
   {
     "id": 11,
     "category": "acompanhamento",
-    "name": "Book",
+    "name": "acomp2",
     "price": 25,
-    "imgUrl": "/burger11.png"
+    "imgUrl": "/acomp2.png"
   },
   {
     "id": 12,
     "category": "bebidas",
-    "name": "Book",
+    "name": "bebida1",
     "price": 25,
-    "imgUrl": "/burger12.png"
+    "imgUrl": "/bebida1.png"
   },
   {
     "id": 13,
     "category": "bebidas",
-    "name": "Book",
+    "name": "bebida2",
     "price": 25,
-    "imgUrl": "/burger13.png"
+    "imgUrl": "/bebida2.png"
   },
   {
     "id": 14,
     "category": "bebidas",
-    "name": "Book",
+    "name": "bebida3",
     "price": 25,
-    "imgUrl": "/burger14.png"
+    "imgUrl": "/bebida3.png"
   },
   {
     "id": 15,
     "category": "bebidas",
-    "name": "Book",
+    "name": "bebida4",
     "price": 25,
-    "imgUrl": "/burger15.png"
+    "imgUrl": "/bebida4.png"
   }
 ]

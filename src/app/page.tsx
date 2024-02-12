@@ -1,6 +1,5 @@
 import Section from '@/components/layout/Section'
 
-// https://storyset.com/illustration/hamburger/bro (img hamburguer)
 // https://storyset.com/illustration/order-food/bro (img aplicativo)
 // https://storyset.com/illustration/location-review/bro (local)
 
