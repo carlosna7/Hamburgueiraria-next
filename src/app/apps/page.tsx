@@ -37,26 +37,30 @@ const Apps = () => {
       <h3 className='text-4xl '>Vantagens exclusivas do APP!</h3>
       
       <div className='flex items-center justify-between gap-8'>
-        <div className='bg-amber-50 w-1/4 h-[300px] flex flex-col items-center text-center p-4'>
-          <img className='z-1 relative' src="/fundinho.png" alt="" />
-          <FaBurger className='z-2 text-7xl text-amber-900' />
-          <p>Cumpons exclusivos</p>
-          <p>Fica entre nós, mas os maiores e melhores descontos estão no nosso APP.</p>
+        <div className='w-1/4 h-[300px] flex flex-col items-center text-center p-4 relative'>
+          <div className='absolute inset-0 z-0' style={{ backgroundImage: `url("/fundinho.png")`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <FaBurger className='z-10 text-7xl text-amber-900 relative' />
+          <p className='z-10'>Cumpons exclusivos</p>
+          <p className='z-10'>Fica entre nós, mas os maiores e melhores descontos estão no nosso APP.</p>
         </div>
-        <div className='bg-amber-50 w-1/4 h-[300px] flex flex-col items-center text-center p-4'>
-          <FaBurger className='text-7xl text-amber-900' />
-          <p>Prático e Seguro</p>
-          <p>Faça o cadastro Burger King uma única vez e use sempre sem se preocupar.</p>
+
+        <div className='w-1/4 h-[300px] flex flex-col items-center text-center p-4 relative'>
+          <div className='absolute inset-0 z-0' style={{ backgroundImage: `url("/fundinho2.png")`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <FaBurger className='z-10 text-7xl text-amber-900 relative' />
+          <p className='z-10'>Prático e Seguro</p>
+          <p className='z-10'>Faça o cadastro Burger King uma única vez e use sempre sem se preocupar.</p>
         </div>
-        <div className='bg-amber-50 w-1/4 h-[300px] flex flex-col items-center text-center p-4'>
-          <FaBurger className='text-7xl text-amber-900' />
-          <p>Retire sem filas</p>
-          <p>Diga adeus às filas, pague pelo APP e retire no restaurante, balcão ou driver-thru.</p>
+        <div className='w-1/4 h-[300px] flex flex-col items-center text-center p-4 relative'>
+          <div className='absolute inset-0 z-0' style={{ backgroundImage: `url("/fundinho.png")`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <FaBurger className='z-10 text-7xl text-amber-900 relative' />
+          <p className='z-10'>Retire sem filas</p>
+          <p className='z-10'>Diga adeus às filas, pague pelo APP e retire no restaurante, balcão ou driver-thru.</p>
         </div>
-        <div className='bg-amber-50 w-1/4 h-[300px] flex flex-col items-center text-center p-4'>
-          <FaBurger className='text-7xl text-amber-900' />
-          <p>Pontue</p>
-          <p>Todos os benefícios e vantagens do Clube na palma da sua mão.</p>
+        <div className='w-1/4 h-[300px] flex flex-col items-center text-center p-4 relative'>
+          <div className='absolute inset-0 z-0' style={{ backgroundImage: `url("/fundinho2.png")`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <FaBurger className='z-10 text-7xl text-amber-900 relative' />
+          <p className='z-10'>Pontue</p>
+          <p className='z-10'>Todos os benefícios e vantagens do Clube na palma da sua mão.</p>
         </div>
       </div>
     </div>
