@@ -36,23 +36,24 @@ const Apps = () => {
     <div className='flex flex-col justify-between px-48 p-8 gap-8'>
       <h3 className='text-4xl '>Vantagens exclusivas do APP!</h3>
       
-      <div className='flex justify-between'>
-        <div className='bg-amber-50 texty-amber-900'>
-          <FaBurger className='text-7xl text-amber-900' />
+      <div className='flex items-center justify-between gap-8'>
+        <div className='bg-amber-50 w-1/4 h-[300px] flex flex-col items-center text-center p-4'>
+          <img className='z-1 relative' src="/fundinho.png" alt="" />
+          <FaBurger className='z-2 text-7xl text-amber-900' />
           <p>Cumpons exclusivos</p>
           <p>Fica entre nós, mas os maiores e melhores descontos estão no nosso APP.</p>
         </div>
-        <div className='bg-amber-50'>
+        <div className='bg-amber-50 w-1/4 h-[300px] flex flex-col items-center text-center p-4'>
           <FaBurger className='text-7xl text-amber-900' />
           <p>Prático e Seguro</p>
           <p>Faça o cadastro Burger King uma única vez e use sempre sem se preocupar.</p>
         </div>
-        <div className='bg-amber-50'>
+        <div className='bg-amber-50 w-1/4 h-[300px] flex flex-col items-center text-center p-4'>
           <FaBurger className='text-7xl text-amber-900' />
           <p>Retire sem filas</p>
-          <p>Diga "adeus" às filas, pague pelo APP e retire no restaurante, balcão ou driver-thru.</p>
+          <p>Diga adeus às filas, pague pelo APP e retire no restaurante, balcão ou driver-thru.</p>
         </div>
-        <div className='bg-amber-50'>
+        <div className='bg-amber-50 w-1/4 h-[300px] flex flex-col items-center text-center p-4'>
           <FaBurger className='text-7xl text-amber-900' />
           <p>Pontue</p>
           <p>Todos os benefícios e vantagens do Clube na palma da sua mão.</p>
