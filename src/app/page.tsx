@@ -13,8 +13,8 @@ export default function Home() {
     <div className='relative'>
 
       <div className='absolute left-48 inset-y-1/3 '>
-        <h1 className='text-7xl text-white font-bold'>Hamburgueiraria</h1>
-        <h1 className='text-7xl text-white pt-8'>NEXT!</h1>
+        <h1 className='text-8xl text-white font-bold'>Hamburgueiraria</h1>
+        <h1 className='text-8xl text-white pt-8'>NEXT!</h1>
       </div>
 
       <img
