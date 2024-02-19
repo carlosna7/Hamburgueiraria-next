@@ -37,23 +37,23 @@ const Apps = () => {
       <h3 className='text-4xl '>Vantagens exclusivas do APP!</h3>
       
       <div className='flex items-center justify-between gap-8 relative' >
-        <div className='w-1/4 h-[350px] flex flex-col items-center justify-center text-center text-lg p-16 z-1' style={{ backgroundImage: `url("/fundinho.png")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-1/4 h-[350px] flex flex-col items-center justify-center text-center text-lg p-16 z-1 duration-500 hover:scale-90' style={{ backgroundImage: `url("/fundinho.png")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <FaMoneyCheckDollar className='z-10 text-7xl text-amber-900 ' />
           <p className='z-10'>Cumpons exclusivos</p>
           <p className='z-10'>Fica entre nós, mas os maiores e melhores descontos estão no nosso APP.</p>
         </div>
 
-        <div className='w-1/4 h-[350px] flex flex-col items-center justify-center text-center text-lg p-16 z-1' style={{ backgroundImage: `url("/fundinho2.png")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-1/4 h-[350px] flex flex-col items-center justify-center text-center text-lg p-16 z-1 duration-500 hover:scale-90' style={{ backgroundImage: `url("/fundinho2.png")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <MdSecurityUpdateGood className='z-10 text-7xl text-amber-900' />
           <p className='z-10'>Prático e Seguro</p>
           <p className='z-10'>Faça o cadastro uma única vez e use sempre sem se preocupar.</p>
         </div>
-        <div className='w-1/4 h-[350px] flex flex-col items-center justify-center text-center text-lg p-16 z-1' style={{ backgroundImage: `url("/fundinho.png")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-1/4 h-[350px] flex flex-col items-center justify-center text-center text-lg p-16 z-1 duration-500 hover:scale-90' style={{ backgroundImage: `url("/fundinho.png")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <FaCarSide className='z-10 text-7xl text-amber-900' />
           <p className='z-10'>Retire sem filas</p>
           <p className='z-10'>Diga adeus às filas, pague pelo APP e retire no restaurante, balcão ou driver-thru.</p>
         </div>
-        <div className='w-1/4 h-[350px] flex flex-col items-center justify-center text-center text-lg p-16 z-1' style={{ backgroundImage: `url("/fundinho2.png")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-1/4 h-[350px] flex flex-col items-center justify-center text-center text-lg p-16 z-1 duration-500 hover:scale-90' style={{ backgroundImage: `url("/fundinho2.png")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <FaStar className='z-10 text-7xl text-amber-900' />
           <p className='z-10'>Pontue</p>
           <p className='z-10'>Todos os benefícios e vantagens do Clube na palma da sua mão.</p>
@@ -61,12 +61,9 @@ const Apps = () => {
       </div>
     </div>
 
+
+
     <div className='bg-amber-100 flex justify-between px-48 p-8'>
-      <h3 className='text-4xl text-amber-900'>Como funciona o APP?</h3>
-
-    </div>
-
-    <div className='flex justify-between px-48 p-8'>
       <h3 className='text-4xl text-amber-900'>Faça um PIX ou pague como quiser</h3>
 
     </div>
