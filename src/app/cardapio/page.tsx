@@ -52,10 +52,10 @@ const Cardapio = () => {
 
       {carneAberto ? (
         <> 
-          <h2 className='text-3xl'>Sanduíches de Carne</h2>
-          <div className='grid grid-cols-4'>
+          <h2 className='text-3xl py-6'>Sanduíches de Carne</h2>
+          <div className='grid grid-cols-4 gap-8'>
             {carneItems.map(item => (
-              <div className='' key={item.id}>
+              <div key={item.id}>
                 <StoreItem {...item}/>
               </div>
             ))}
@@ -64,11 +64,11 @@ const Cardapio = () => {
       ) : null }
       {frangoAberto ? (
         <> 
-          <h2 className='text-3xl'>Sanduíches de Frango</h2>
-          <div className='grid grid-cols-4'>
+          <h2 className='text-3xl py-6'>Sanduíches de Frango</h2>
+          <div className='grid grid-cols-4 gap-8'>
             {frangoItems.map(item => (
-              <div key={item.id}>
-                <StoreItem {...item}/>
+              <div className='' key={item.id}>
+                <StoreItem  {...item}/>
               </div>
             ))}
           </div>
@@ -76,8 +76,8 @@ const Cardapio = () => {
       ) : null }
       {baconAberto ? (
         <> 
-          <h2 className='text-3xl'>Sanduíches com Bacon</h2>
-          <div className='grid grid-cols-4'>
+          <h2 className='text-3xl py-6'>Sanduíches com Bacon</h2>
+          <div className='grid grid-cols-4 gap-8'>
             {baconItems.map(item => (
               <div key={item.id}>
                 <StoreItem {...item}/>
@@ -88,8 +88,8 @@ const Cardapio = () => {
       ) : null }
       {acompAberto ? (
         <> 
-          <h2 className='text-3xl'>Acompanhamentos</h2>
-          <div className='grid grid-cols-4'>
+          <h2 className='text-3xl py-6'>Acompanhamentos</h2>
+          <div className='grid grid-cols-4 gap-8'>
             {acompanhamentoItems.map(item => (
               <div key={item.id}>
                 <StoreItem {...item}/>
@@ -100,8 +100,8 @@ const Cardapio = () => {
       ) : null }
       {bebidaAberto ? (
         <> 
-          <h2 className='text-3xl'>Bebidas</h2>
-          <div className='grid grid-cols-4'>
+          <h2 className='text-3xl py-6'>Bebidas</h2>
+          <div className='grid grid-cols-4 gap-8'>
             {bebidasItems.map(item => (
               <div key={item.id}>
                 <StoreItem {...item}/>

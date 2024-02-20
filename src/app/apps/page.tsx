@@ -63,7 +63,7 @@ const Apps = () => {
 
     <section className='bg-amber-100 flex flex-col px-48'>
 
-      <div className='flex'>
+      <div className='flex justify-center'>
         <img src="/app/phone-removebg-preview.png" alt="" />
 
         <div className='flex flex-col justify-center gap-8'>
