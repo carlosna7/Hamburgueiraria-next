@@ -19,16 +19,13 @@ interface TModal {
 }
 
 const FilterModal: React.FC<TModal> = ({ isOpen, setIsOpen, setCarneAberto, setFrangoAberto, setBaconAberto, setAcompAberto, setBebidaAberto }) => {
-  
+
   const closeModal = () => {
-    console.log('fechado')
     setIsOpen((prev) => !prev)
   }
 
   const toggleState = (setState: React.Dispatch<React.SetStateAction<boolean>>) => {
     setState((prev) => !prev)
-
-    console.log(toggleState)
   }
 
   return isOpen ? (
@@ -49,7 +46,7 @@ const FilterModal: React.FC<TModal> = ({ isOpen, setIsOpen, setCarneAberto, setF
         <div className='flex flex-col gap-4'>
           <div className='flex items-center gap-2 text-xl'>
             <div className='border-2 border-black w-6 h-6' onClick={() => toggleState(setCarneAberto)}>
-              <FaCheck className='text-black' />
+              {/* {teste ? <FaCheck className='text-black' /> : <FaXmark className='text-black' />} */}
             </div>
             <p>Sanduíche de Carne</p>
             <FaBurger  />
@@ -57,7 +54,7 @@ const FilterModal: React.FC<TModal> = ({ isOpen, setIsOpen, setCarneAberto, setF
 
           <div className='flex items-center gap-2 text-xl'>
             <div className='border-2 border-black w-6 h-6' onClick={() => toggleState(setFrangoAberto)}>
-              <FaCheck className='text-black' />
+              {/* {teste ? <FaCheck className='text-black' /> : <FaXmark className='text-black' />} */}
             </div>
             <p>Sanduíche de Frango</p>
             <GiChickenLeg />
@@ -65,7 +62,7 @@ const FilterModal: React.FC<TModal> = ({ isOpen, setIsOpen, setCarneAberto, setF
 
           <div className='flex items-center gap-2 text-xl'>
             <div className='border-2 border-black w-6 h-6' onClick={() => toggleState(setBaconAberto)}>
-              <FaCheck className='text-black' />
+              {/* {teste ? <FaCheck className='text-black' /> : <FaXmark className='text-black' />} */}
             </div>
             <p>Sanduíche com Bacon</p>
             <FaBacon />
@@ -73,7 +70,7 @@ const FilterModal: React.FC<TModal> = ({ isOpen, setIsOpen, setCarneAberto, setF
 
           <div className='flex items-center gap-2 text-xl'>
             <div className='border-2 border-black w-6 h-6' onClick={() => toggleState(setAcompAberto)}>
-              <FaCheck className='text-black' />
+              {/* {teste ? <FaCheck className='text-black' /> : <FaXmark className='text-black' />} */}
             </div>
             <p>Acompanhamentos</p>
             <GiNachos />
@@ -81,7 +78,7 @@ const FilterModal: React.FC<TModal> = ({ isOpen, setIsOpen, setCarneAberto, setF
 
           <div className='flex items-center gap-2 text-xl'>
             <div className='border-2 border-black w-6 h-6' onClick={() => toggleState(setBebidaAberto)}>
-              <FaCheck className='text-black' />
+              {/* {teste ? <FaCheck className='text-black' /> : <FaXmark className='text-black' />} */}
             </div>
             <p>Bebidas</p>
             <BsCupStraw />
