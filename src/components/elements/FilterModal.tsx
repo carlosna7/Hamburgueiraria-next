@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { FaXmark, FaBurger, FaBacon, FaCheck  } from 'react-icons/fa6'
+import { FaXmark, FaBurger, FaBacon } from 'react-icons/fa6'
 import { BsCupStraw } from 'react-icons/bs'
 import { GiChickenLeg, GiConsoleController, GiNachos } from 'react-icons/gi'
 
