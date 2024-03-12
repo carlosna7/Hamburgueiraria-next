@@ -12,14 +12,17 @@ const ShoppingCart = () => {
     
   return (
     <div className={`${isOpen ? 'block' : 'hidden'} z-10 fixed top-0 right-0 h-full w-1/4 bg-white shadow-lg`}>
+
       <button onClick={closeCart} className='text-3xl'>
         <FaXmark />
       </button>
+
       <div>
         {cartItems.map(item => (
           <CartItems key={item.id} {...item }/> 
         )) }
       </div>
+
       <div className='flex justify-end font-bold text-2xl'>
         Total 
         {formatCurrency(cartItems.reduce((total, cartItem) => {

@@ -30,7 +30,7 @@ const Navbar = () => {
 		<div className='z-10 flex justify-between items-center px-48 p-4 gap-4 bg-amber-100 h-20'>
 
 			<div className='text-5xl text-white bg-red-500 p-2 rounded-full cursor-pointer'>
-				<GiHamburger />
+				<Link href="/"><GiHamburger /></Link>
 			</div>
 
 			<ul className='flex items-center gap-6 text-3xl text-amber-900'>
@@ -41,10 +41,10 @@ const Navbar = () => {
 					<Link href="/cardapio">Menu</Link>
 				</li>
 				<li>
-					<Link href="/about">About</Link>
+					<Link href="/apps">App</Link>
 				</li>
 				<li>
-					<Link href="/apps">App</Link>
+					<Link href="/about">About</Link>
 				</li>
 			</ul>
 

@@ -20,18 +20,17 @@ const CartItems = ({ id, quantity }: CartItemProps) => {
   
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col mx-8 p-4 border-b-2'>
       
-      <div className='flex'>
+      <div className='flex flex-row'>
         <img className='h-24 w-2/5 object-cover' src={item.imgUrl} alt="img" />
-        <div>
-          <p>{item.name} {quantity > 0 && <span>{quantity}x</span>}</p>
-          <p>{formatCurrency(item.price)}</p>
-        </div>
-        <div>
+        <div className='flex '>
+          <p>{quantity > 0 && <>{quantity}x</>} {item.name}</p>
           <p>{formatCurrency(quantity * item.price)}</p>
-          <button onClick={() => removeFromCart(item.id)} >x</button>
         </div>
+        {/* <div>
+          <button onClick={() => removeFromCart(item.id)} >remover</button>
+        </div> */}
       </div>
 
     </div>
