@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import { FaXmark, FaBurger, FaBacon, FaCheck  } from 'react-icons/fa6'
 import { BsCupStraw } from 'react-icons/bs'
 import { GiChickenLeg, GiConsoleController, GiNachos } from 'react-icons/gi'
@@ -20,11 +22,18 @@ interface TModal {
 
 const FilterModal: React.FC<TModal> = ({ isOpen, setIsOpen, setCarneAberto, setFrangoAberto, setBaconAberto, setAcompAberto, setBebidaAberto }) => {
 
+  const [ carneState, setCarneState ] = useState(false) 
+  const [ frangoState, setFrangoState ] = useState(false) 
+  const [ baconState, setBaconState ] = useState(false) 
+  const [ acompState, setAcompState ] = useState(false) 
+  const [ bebidaState, setBebidaState ] = useState(false) 
+
   const closeModal = () => {
     setIsOpen((prev) => !prev)
   }
 
   const toggleState = (setState: React.Dispatch<React.SetStateAction<boolean>>) => {
+    console.log(setState)
     setState((prev) => !prev)
   }
 
@@ -45,40 +54,40 @@ const FilterModal: React.FC<TModal> = ({ isOpen, setIsOpen, setCarneAberto, setF
 
         <div className='flex flex-col gap-4'>
           <div className='flex items-center gap-2 text-xl'>
-            <div className='border-2 border-black w-6 h-6' onClick={() => toggleState(setCarneAberto)}>
-              {/* {teste ? <FaCheck className='text-black' /> : <FaXmark className='text-black' />} */}
+            <div className='border-2 border-black w-6 h-6' onClick={() => { toggleState(setCarneAberto), toggleState(setCarneState) }} >
+              {carneState ? <FaXmark className='text-black'/> : null }
             </div>
             <p>Sanduíche de Carne</p>
             <FaBurger  />
           </div>
 
           <div className='flex items-center gap-2 text-xl'>
-            <div className='border-2 border-amber-900 w-6 h-6' onClick={() => toggleState(setFrangoAberto)}>
-              {/* {teste ? <FaCheck className='text-black' /> : <FaXmark className='text-black' />} */}
+            <div className='border-2 border-black w-6 h-6' onClick={() => { toggleState(setFrangoAberto), toggleState(setFrangoState) }}>
+              {frangoState ? <FaXmark className='text-black'/> : null }
             </div>
             <p>Sanduíche de Frango</p>
             <GiChickenLeg />
           </div>
 
           <div className='flex items-center gap-2 text-xl'>
-            <div className='border-2 border-black w-6 h-6' onClick={() => toggleState(setBaconAberto)}>
-              {/* {teste ? <FaCheck className='text-black' /> : <FaXmark className='text-black' />} */}
+            <div className='border-2 border-black w-6 h-6' onClick={() => { toggleState(setBaconAberto), toggleState(setBaconState) }}>
+              {baconState ? <FaXmark className='text-black'/> : null }
             </div>
             <p>Sanduíche com Bacon</p>
             <FaBacon />
           </div>
 
           <div className='flex items-center gap-2 text-xl'>
-            <div className='border-2 border-black w-6 h-6' onClick={() => toggleState(setAcompAberto)}>
-              {/* {teste ? <FaCheck className='text-black' /> : <FaXmark className='text-black' />} */}
+            <div className='border-2 border-black w-6 h-6' onClick={() => { toggleState(setAcompAberto), toggleState(setAcompState) }}>
+              {acompState ? <FaXmark className='text-black'/> : null }
             </div>
             <p>Acompanhamentos</p>
             <GiNachos />
           </div>
 
           <div className='flex items-center gap-2 text-xl'>
-            <div className='border-2 border-black w-6 h-6' onClick={() => toggleState(setBebidaAberto)}>
-              {/* {teste ? <FaCheck className='text-black' /> : <FaXmark className='text-black' />} */}
+            <div className='border-2 border-black w-6 h-6' onClick={() => { toggleState(setBebidaAberto), toggleState(setBebidaState) }}>
+              {bebidaState ? <FaXmark className='text-black'/> : null }
             </div>
             <p>Bebidas</p>
             <BsCupStraw />
