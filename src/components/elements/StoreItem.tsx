@@ -1,4 +1,5 @@
 'use client'
+
 import { useShoppingCart } from '@/context/ShoppingCartContext'
 import formatCurrency from '@/utilities/formatCurrency'
 import React from 'react'

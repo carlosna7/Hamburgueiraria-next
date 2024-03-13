@@ -4,7 +4,7 @@ import { useShoppingCart } from '@/context/ShoppingCartContext'
 import formatCurrency from '@/utilities/formatCurrency'
 import storeItems from '../../data/items.json'
 import { FaXmark } from "react-icons/fa6"
-import CartItems from '../layout/CartItems'
+import CartItems from './CartItems'
 
 const ShoppingCart = () => {
 
