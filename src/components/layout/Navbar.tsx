@@ -16,7 +16,7 @@ const Navbar = () => {
 
 	return (<>
 
-		<div className='z-10 2xl:px-48 xl:px-40 lg:px-32 md:px-32 sm:px-16 px-16 bg-amber-100 '>
+		<div className='z-10 2xl:px-48 xl:px-40 lg:px-32 md:px-32 sm:px-16 px-8 bg-amber-100 '>
 			<div className='flex justify-between items-center text-amber-900 border-b-2 border-b-amber-900 p-1'>
 				<p>baixe nosso app</p>
 				<Link href="/apps" className='flex items-center bg-amber-900 p-1 rounded'>
@@ -27,13 +27,13 @@ const Navbar = () => {
 		</div>
 
 
-		<div className='z-10 flex justify-between items-center 2xl:px-48 xl:px-40 lg:px-32 md:px-32 sm:px-16 px-16 p-4 gap-4 bg-amber-100 h-20'>
+		<div className='z-10 flex justify-between items-center 2xl:px-48 xl:px-40 lg:px-32 md:px-32 sm:px-16 px-8 p-4 gap-4 bg-amber-100 h-20'>
 
-			<div className='text-5xl text-white bg-red-500 p-2 rounded-full cursor-pointer'>
+			<div className='xl:text-5xl md:text-4xl text-lg text-white bg-red-500 md:p-2 p-1 rounded-full cursor-pointer'>
 				<Link href="/"><GiHamburger /></Link>
 			</div>
 
-			<ul className='flex items-center gap-6 text-3xl text-amber-900'>
+			<ul className='flex items-center gap-6 xl:text-3xl md:text-2xl text-amber-900'>
 				<li>
 					<Link href="/">Home</Link>
 				</li>
