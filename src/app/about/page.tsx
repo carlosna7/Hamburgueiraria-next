@@ -9,7 +9,7 @@ const About = () => {
 
       <div className='flex justify-between pb-16'>
 
-        <div className='overflow-hidden rounded-3xl 2xl:w-[600px] xl:w-[450px] lg:w-[350px] sm:w-[280px]'>
+        <div className='overflow-hidden rounded-3xl 2xl:w-[600px] xl:w-[450px] lg:w-[350px] md:w-[280px] sm:w-[200px] w-[200px]'>
           <img
             className='duration-500 hover:scale-125'
             src="../about1.jpg"
@@ -19,7 +19,7 @@ const About = () => {
           />
         </div>
 
-        <div className='flex flex-col text-justify gap-4 2xl:w-[600px] xl:w-[450px] lg:w-[350px] sm:w-[280px]'>
+        <div className='flex flex-col text-justify gap-4 2xl:w-[600px] xl:w-[450px] lg:w-[350px] md:w-[280px] sm:w-[200px] w-[200px]'>
 
           <h2 className='flex text-3xl justify-center'>Nossa história</h2>
 
