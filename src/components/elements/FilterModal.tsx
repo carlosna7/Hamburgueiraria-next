@@ -33,7 +33,6 @@ const FilterModal: React.FC<TModal> = ({ isOpen, setIsOpen, setCarneAberto, setF
   }
 
   const toggleState = (setState: React.Dispatch<React.SetStateAction<boolean>>) => {
-    console.log(setState)
     setState((prev) => !prev)
   }
 
