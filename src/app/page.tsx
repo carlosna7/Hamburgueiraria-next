@@ -18,11 +18,13 @@ export default function Home() {
           <h1 className='2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white lg:pt-8 pt-4'>NEXT!</h1>
         </div>
 
+        
         <img
-          className="z-0 top-0 right-0 w-screen"
+          className="z-0 top-0 right-0 sm:w-auto sm:h-full bg-cover h-[400px] object-cover items-center"
           src="../home-img.png"
           alt=""
         />
+        
         
       </div>
 
