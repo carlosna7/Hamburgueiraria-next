@@ -16,84 +16,78 @@ const Footer = () => {
   }
 
   return (
-    <Section className='bg-gray-100 rounded-t-[120px]'>
-      <div className='flex bottom-0 justify-between lg:bg-red-100  lg:flex-row flex-col'>
+    <Section className='bg-gray-100 sm:rounded-t-[120px] rounded-t-[80px] py-8'>
+      <div className='flex bottom-0 justify-between md:flex-row flex-col '>
 
         <div>
           <div className='flex items-center justify-between pb-4'>
             <h3 className='font-bold text-2xl'>Quem somos</h3>
-            <div className='lg:hidden block' onClick={() => { toggleState(setOptOneState) }}>
+            <div className='md:hidden block' onClick={() => {toggleState(setOptOneState)}} >
               <FaPlus />
             </div>
           </div>
-          {optOneState ? 
-            <ul className='font-extralight text-gray-800 cursor-pointer lg:block'>
-              <li >Intitucional</li>
-              <li>Franquias</li>
-              <li>Trabalhe conosco</li>
-              <li>privacidade</li>
-              <li>Termos</li>
-              <li>História</li>
-              <li>Corporação</li>
-            </ul> 
-          : null}
+
+          <ul className={`font-extralight pb-4 text-gray-800 cursor-pointer ${optOneState ? 'hidden' : 'block'} md:block `}>
+            <li >Intitucional</li>
+            <li>Franquias</li>
+            <li>Trabalhe conosco</li>
+            <li>privacidade</li>
+            <li>Termos</li>
+            <li>História</li>
+            <li>Corporação</li>
+          </ul> 
+          
         </div>
 
         <div>
           <div className='flex items-center justify-between pb-4'>
             <h3 className='font-bold text-2xl'>Família</h3>
-            <div className='lg:hidden block' onClick={() => { toggleState(setOptTwoState) }}>
+            <div className='md:hidden block' onClick={() => {toggleState(setOptTwoState)}} >
               <FaPlus />
             </div>
           </div>
-          {optTwoState ?
-            <ul className='font-extralight text-gray-800 cursor-pointer lg:block'>
-              <li>Lançamentos</li>
-              <li>Promoções</li>
-              <li>Cupons</li>
-              <li>Para família</li>
-            </ul>
-          : null } 
+          <ul className={`font-extralight pb-4 text-gray-800 cursor-pointer ${optTwoState ? 'hidden' : 'block'} md:block `}>
+            <li>Lançamentos</li>
+            <li>Promoções</li>
+            <li>Cupons</li>
+            <li>Para família</li>
+          </ul>
         </div>
 
         <div>
           <div className='flex items-center justify-between pb-4'>
             <h3 className='font-bold text-2xl'>Para você</h3>
-            <div className='lg:hidden block' onClick={() => { toggleState(setOptThreeState) } }>
+            <div className='md:hidden block' onClick={() => {toggleState(setOptThreeState)}} >
               <FaPlus />
             </div>
           </div>
-          {optThreeState ? 
-            <ul className='font-extralight text-gray-800 cursor-pointer lg:block'>
-              <li>App</li>
-              <li>Delivery</li>
-              <li>WhatsApp</li>
-              <li>Drive-thru</li>
-              <li>Lorem</li>
-              <li>Intitucional</li>
-            </ul>
-          : null}
+          <ul className={`font-extralight pb-4 text-gray-800 cursor-pointer ${optThreeState ? 'hidden' : 'block'} md:block `}>
+            <li>App</li>
+            <li>Delivery</li>
+            <li>WhatsApp</li>
+            <li>Drive-thru</li>
+            <li>Lorem</li>
+            <li>Intitucional</li>
+          </ul>
         </div>
         
         <div>
           <div className='flex items-center justify-between pb-4'>
             <h3 className='font-bold text-2xl'>Contato</h3>
-            <div className='lg:hidden block' onClick={() => { toggleState(setOptFourState) }}>
+            <div className='md:hidden block' onClick={() => {toggleState(setOptFourState)}} >
               <FaPlus />
             </div>
           </div>
-          {optFourState ?
-            <ul className='font-extralight text-gray-800 cursor-pointer lg:block'>
-              <li>Instagram</li>
-              <li>WhatsApp</li>
-              <li>Twitter</li>
-            </ul>
-          : null}
+          <ul className={`font-extralight pb-4 text-gray-800 cursor-pointer ${optFourState ? 'hidden' : 'block'} md:block `}>
+            <li>Instagram</li>
+            <li>WhatsApp</li>
+            <li>Twitter</li>
+          </ul>
         </div>
 
       </div>
 
-      <div className='flex border-gray-700 border-b-[1px] gap-4 lg:flex-row flex-col justify-between pt-16 pb-4'>
+      <div className='flex border-gray-700 border-b-[1px] gap-4 lg:flex-row flex-col justify-between p-4'>
         <div className='flex justify-center gap-8 lg:text-2xl text-xl'>
           <div className='rounded-full p-2 border-2 border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white'>
             <FaFacebookF />
