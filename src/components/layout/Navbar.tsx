@@ -32,7 +32,7 @@ const Navbar = () => {
 	return (
 		<>
 
-			<div className='z-10 bg-amber-100 2xl:px-48 xl:px-40 lg:px-32 md:px-32 sm:px-16 px-8'>
+			<div className='z-10 bg-amber-200 2xl:px-48 xl:px-40 lg:px-32 md:px-32 sm:px-16 px-8'>
 				<div className='flex justify-between items-center text-amber-900 border-b-2 border-b-amber-900 p-1'>
 					<p>baixe nosso app</p>
 					<Link href="/apps" className='flex items-center bg-amber-900 p-1 rounded'>
@@ -43,7 +43,7 @@ const Navbar = () => {
 			</div>
 
 
-			<div className='z-10 flex justify-between items-center bg-amber-100 2xl:px-48 xl:px-40 lg:px-32 md:px-32 sm:px-16 sm:p-4 px-8 p-2 gap-4 h-full'>
+			<div className='z-10 flex justify-between items-center bg-amber-200 2xl:px-48 xl:px-40 lg:px-32 md:px-32 sm:px-16 sm:p-4 px-8 p-2 gap-4 h-full'>
 
 				<div className='flex items-center sm:gap-8 gap-4'>
 					<div className='text-white bg-red-500 rounded-full cursor-pointer xl:text-5xl md:text-4xl md:p-2 text-3xl p-1 '>
