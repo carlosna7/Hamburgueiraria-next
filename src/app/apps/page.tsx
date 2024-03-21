@@ -8,7 +8,7 @@ const Apps = () => {
   return (
   <>
   
-    <section className='relative h-full bg-amber-900 flex px-48 p-8'>
+    <section className='relative h-auto bg-amber-900 flex px-48 p-8'>
       <div className='w-1/2 flex flex-col gap-8'>
         <h1 className='text-8xl text-amber-50'>Prático, rápido e cheio de benefícios</h1>
         <h2 className='text-6xl text-amber-200'>Venha para o nosso APP!</h2>
@@ -28,8 +28,8 @@ const Apps = () => {
         </div>
       </div>
 
-      <div className='w-1/2'>
-        
+      <div className='w-1/2 flex justify-center'>
+        <img className='h-full' src="Order food-bro.png" alt="" height={500} width={500}/>
       </div>
     </section>
 
