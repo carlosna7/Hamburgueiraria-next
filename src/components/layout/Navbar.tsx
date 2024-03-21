@@ -9,7 +9,7 @@ import storeItems from '../../data/items.json'
 import { MdFastfood } from 'react-icons/md'
 import { GiHamburger } from 'react-icons/gi'
 import { BsPhone } from 'react-icons/bs'
-import { FaBars } from "react-icons/fa6"
+import { FaBars, FaAngleRight } from "react-icons/fa6"
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 
@@ -93,20 +93,26 @@ const Navbar = () => {
 
 			<>{openNavbar
 				?
-				<ul className=''>
-					<li>
-						<Link href="/">Home</Link>
-					</li>
-					<li>
-						<Link href="/cardapio">Menu</Link>
-					</li>
-					<li>
-						<Link href="/apps">App</Link>
-					</li>
-					<li>
-						<Link href="/about">About</Link>
-					</li>
-				</ul>
+				<div className='border-t-2 border-amber-900'>
+					<ul className='2xl:px-48 xl:px-40 lg:px-32 md:px-32 sm:px-16 px-8 p-4 flex flex-col gap-4 bg-amber-200'>
+						<li className='bg-amber-50 rounded-lg p-2 w-full hover:bg-amber-800 hover:text-white flex justify-between items-center'>
+							<Link href="/">Home</Link>
+							<FaAngleRight />
+						</li>
+						<li className='bg-amber-50 rounded-lg p-2 w-full hover:bg-amber-800 hover:text-white flex justify-between items-center'>
+							<Link href="/cardapio">Menu</Link>
+							<FaAngleRight />
+						</li>
+						<li className='bg-amber-50 rounded-lg p-2 w-full hover:bg-amber-800 hover:text-white flex justify-between items-center'>
+							<Link href="/apps">App</Link>
+							<FaAngleRight />
+						</li>
+						<li className='bg-amber-50 rounded-lg p-2 w-full hover:bg-amber-800 hover:text-white flex justify-between items-center'>
+							<Link href="/about">About</Link>
+							<FaAngleRight />
+						</li>
+					</ul>
+				</div>
 				:
 				null
 			}</>

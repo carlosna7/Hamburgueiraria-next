@@ -30,8 +30,8 @@ const Cardapio = () => {
   return (
     <Section>
 
-      <div className='flex justify-between items-start hidden'>
-        <h1 className='flex justify-center font-bold pb-24 text-5xl'>Cardápio</h1>
+      <div className='flex justify-between items-start 2xl:pb-24 xl:pb-20 md:pb-16 pb-8'>
+        <h1 className='flex justify-center font-bold text-5xl'>Cardápio</h1>
         <FilterBox onClick={openModal} />  
       </div>
 
@@ -52,7 +52,7 @@ const Cardapio = () => {
 
       {carneAberto ? (
         <> 
-          <h2 className='text-3xl py-6'>Sanduíches de Carne</h2>
+          <h2 className='text-3xl pb-6'>Sanduíches de Carne</h2>
           <div className='grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 sm:gap-8 gap-4'>
             {carneItems.map(item => (
               <div key={item.id}>

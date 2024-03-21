@@ -8,11 +8,11 @@ type ClickItensProps = {
 const FilterBox = ({ onClick }: ClickItensProps) => {
 
   return (
-    <div onClick={onClick} className='flex bg-red-500 p-2 px-8 rounded-lg items-center justify-center gap-20 text-white'>
-      <span className='text-4xl'>
+    <div onClick={onClick} className='flex bg-red-500 p-2 lg:px-8 lg:rounded-lg rounded-3xl items-center justify-center gap-20 text-white'>
+      <span className='lg:text-4xl text-3xl'>
         <HiAdjustmentsHorizontal /> 
       </span>
-      <p className='text-xl'>Filtro</p>
+      <p className='text-xl lg:block hidden'>Filtro</p>
     </div>
   )
 }
