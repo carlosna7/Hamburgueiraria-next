@@ -30,12 +30,12 @@ const Cardapio = () => {
   return (
     <Section>
 
-      <div className='flex justify-between items-start'>
+      <div className='flex justify-between items-start hidden'>
         <h1 className='flex justify-center font-bold pb-24 text-5xl'>Cardápio</h1>
         <FilterBox onClick={openModal} />  
       </div>
 
-      <FilterModal 
+      <FilterModal
         isOpen={isOpen}
         setIsOpen={setIsOpen}
         setCarneAberto={setCarneAberto}
@@ -53,7 +53,7 @@ const Cardapio = () => {
       {carneAberto ? (
         <> 
           <h2 className='text-3xl py-6'>Sanduíches de Carne</h2>
-          <div className='grid grid-cols-4 gap-8'>
+          <div className='grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 sm:gap-8 gap-4'>
             {carneItems.map(item => (
               <div key={item.id}>
                 <StoreItem {...item}/>
@@ -65,7 +65,7 @@ const Cardapio = () => {
       {frangoAberto ? (
         <> 
           <h2 className='text-3xl py-6'>Sanduíches de Frango</h2>
-          <div className='grid grid-cols-4 gap-8'>
+          <div className='grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 sm:gap-8 gap-4'>
             {frangoItems.map(item => (
               <div className='' key={item.id}>
                 <StoreItem  {...item}/>
@@ -77,7 +77,7 @@ const Cardapio = () => {
       {baconAberto ? (
         <> 
           <h2 className='text-3xl py-6'>Sanduíches com Bacon</h2>
-          <div className='grid grid-cols-4 gap-8'>
+          <div className='grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 sm:gap-8 gap-4'>
             {baconItems.map(item => (
               <div key={item.id}>
                 <StoreItem {...item}/>
@@ -89,7 +89,7 @@ const Cardapio = () => {
       {acompAberto ? (
         <> 
           <h2 className='text-3xl py-6'>Acompanhamentos</h2>
-          <div className='grid grid-cols-4 gap-8'>
+          <div className='grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 sm:gap-8 gap-4'>
             {acompanhamentoItems.map(item => (
               <div key={item.id}>
                 <StoreItem {...item}/>
@@ -101,7 +101,7 @@ const Cardapio = () => {
       {bebidaAberto ? (
         <> 
           <h2 className='text-3xl py-6'>Bebidas</h2>
-          <div className='grid grid-cols-4 gap-8'>
+          <div className='grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 sm:gap-8 gap-4'>
             {bebidasItems.map(item => (
               <div key={item.id}>
                 <StoreItem {...item}/>
