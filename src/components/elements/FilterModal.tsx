@@ -40,7 +40,7 @@ const FilterModal: React.FC<TModal> = ({ isOpen, setIsOpen, setCarneAberto, setF
     <div className='fixed rounded inset-1/2 translate-x-[-50%] translate-y-[-50%] h-full w-full'>
       <div className='bg-black opacity-40 h-full w-full absolute'></div>
 
-      <div className='absolute bg-white w-[700px] h-[450px] inset-1/2 translate-x-[-50%] translate-y-[-50%] text-amber-900 rounded-xl p-8'>
+      <div className='absolute bg-white md:w-[700px] md:h-[450px] w-full h-3/4 inset-1/2 md:translate-x-[-50%] md:translate-y-[-50%] translate-x-[-50%] translate-y-[-20%] text-amber-900 rounded-xl p-8'>
         <div>
           <h3 className='flex justify-center text-4xl pb-8'>Categorias</h3>
           <button

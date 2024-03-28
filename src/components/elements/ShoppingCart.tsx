@@ -11,7 +11,7 @@ const ShoppingCart = () => {
   const { isOpen, closeCart, cartItems } = useShoppingCart()
     
   return (
-    <div className={`${isOpen ? 'block' : 'hidden'} z-10 fixed top-0 right-0 h-full w-1/4 bg-white shadow-lg`}>
+    <div className={`${isOpen ? 'block' : 'hidden'} z-10 fixed top-0 right-0 h-full sm:w-[500px] w-full bg-white shadow-lg`}>
 
       <button onClick={closeCart} className='text-3xl'>
         <FaXmark />
@@ -23,8 +23,8 @@ const ShoppingCart = () => {
         )) }
       </div>
 
-      <div className='flex justify-end font-bold text-2xl'>
-        Total 
+      <div className='flex justify-end font-bold text-2xl px-8'>
+        Total
         {formatCurrency(cartItems.reduce((total, cartItem) => {
           const item = storeItems.find(i => i.id === cartItem.id)
 
